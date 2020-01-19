@@ -1,0 +1,118 @@
+/* 
+    Created on : 21-nov-2019, 17:53:50
+    Author     : RVS
+*/
+
+.title {
+  width: 40%;
+
+  padding: 1%;
+  margin: 1% auto;
+} 
+
+.title-2 {
+  width: 40%;
+
+  padding: 1%;
+  margin: 1% auto;
+}
+
+.title--deco{
+  text-align: center;
+  font-family: Roboto , sans-serif;
+  background: #6ba8a9;
+  border-radius: 7px;
+}
+
+.title-2--deco{
+  text-align: center;
+  font-family: Roboto , sans-serif;
+  background: #6ba8a9;
+  border-radius: 7px;
+}
+
+.box-main{
+  background: #6ba8a9;
+  height: fit-content;
+}
+
+.container-columns {
+  width: content-box;
+  height: fit-content;
+
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  flex-flow: row wrap;
+
+  background: #71c9ce;
+}
+
+.container-item {
+  width: content-box;
+  height: content-box;
+
+  margin: 0.2%;
+}
+
+.item--deco {
+  color: #000;
+  font-family: Roboto , sans-serif;
+  text-align: center;
+  line-height: 55px;
+  background: #a6e3e9;
+  border: 1px solid #000;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+} 
+
+.box--deco {
+  background: #a6e3e9;
+}
+
+.box-img {
+  width: 40%;
+  height: auto;
+
+  margin: 25% auto;
+  padding: 2%;
+}
+
+.img--deco{
+  border-radius: 50%;
+}
+
+.flex-container-center{
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  flex-flow: column nowrap; 
+  justify-content: space-between;
+  align-content: center;
+}
+
+.flex-item {
+  width: 20%;
+  height: auto;
+  margin: 1% 1%;
+}
+
+.flex-item--deco {
+  border: 1px solid #000;
+}
+
+.box-img-1 {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 2% 2%;
+}
+
+.img--deco-1 {
+  border: 1px solid #000;
+}

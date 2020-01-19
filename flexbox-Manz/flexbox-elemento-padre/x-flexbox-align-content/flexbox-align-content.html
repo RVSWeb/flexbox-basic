@@ -1,0 +1,179 @@
+<!-- 
+Created on : 25-nov-2019 17:35:34 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-align-content</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content=".">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      .container-align-content-flex-start{
+        justify-content: flex-start;
+        align-content: center;
+      }
+
+      .container-align-content-flex-end{
+        justify-content: flex-end;
+        align-content: center;
+      }
+
+      .container-align-content-space-around{
+        justify-content: space-around;
+        align-content: center;
+      }
+
+      .container-align-content-space-between{
+        justify-content: space-between;
+        align-content: center;
+      }
+
+      .container-align-content-center {
+        justify-content: center;
+        align-content: center;
+      }
+
+      .container-align-content-strech{
+        justify-content: center;
+        align-content: stretch;
+      }
+
+      .align-content--deco {
+        box-sizing: border-box;
+
+        display: flex;
+        flex-flow: row wrap;        
+        width: content-box;
+        height: 200px;
+        background: #2d132c;
+      }
+
+      .item-align {
+        width: 50px;
+        height: 50px;
+      }
+
+      .item-align-strech{
+        width: fit-content;
+        height: auto
+      }
+
+      .content--deco-strech{
+        width: fit-content;
+        height: content-box;
+        text-align: center;
+        font-family: Roboto , sans-serif;
+        font-size: 1em;
+        font-weight: bolder;
+        background: #801336;
+        border: 5px solid #ee4540;
+        text-justify: distribute;
+      }
+
+      h1 , .content--deco {
+        font-family: Roboto , sans-serif;
+        font-size: 2em;
+        text-align: center;
+        background: #801336;
+        border: 5px solid #ee4540;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Flexbox - align-content : flex-start</h1>
+    <div class="container-align-content-flex-start align-content--deco">
+      <div class="item-align content--deco">1</div>
+      <div class="item-align content--deco">2</div>
+      <div class="item-align content--deco">3</div>
+      <div class="item-align content--deco">4</div>
+      <div class="item-align content--deco">5</div>
+    </div>
+
+    <h1>Flexbox - align-content : flex-end</h1>
+    <div class="container-align-content-flex-end align-content--deco">
+      <div class="item-align content--deco">1</div>
+      <div class="item-align content--deco">2</div>
+      <div class="item-align content--deco">3</div>
+      <div class="item-align content--deco">4</div>
+      <div class="item-align content--deco">5</div>
+    </div>
+
+
+    <h1>Flexbox - align-content : strech</h1>
+    <div class="container-align-content-strech align-content--deco">
+      <div class="item-align-strech content--deco-strech">      
+        .item-align-strech{
+        width: fit-content;
+        height: auto
+        }
+      </div>
+      <div class="item-align-strech content--deco-strech">      
+        .item-align-strech{
+        width: fit-content;
+        height: auto
+        }
+      </div>
+      <div class="item-align-strech content--deco-strech">      
+        .item-align-strech{
+        width: fit-content;
+        height: auto
+        }
+      </div>
+      <div class="item-align-strech content--deco-strech">      
+        .item-align-strech{
+        width: fit-content;
+        height: auto
+        }
+      </div>
+      <div class="item-align-strech content--deco-strech">      
+        .item-align-strech{
+        width: fit-content;
+        height: auto
+        }
+      </div>
+    </div>
+
+    <h1>Flexbox - align-content : center</h1>
+    <div class="container-align-content-center align-content--deco">
+      <div class="item-align content--deco">1</div>
+      <div class="item-align content--deco">2</div>
+      <div class="item-align content--deco">3</div>
+      <div class="item-align content--deco">4</div>
+      <div class="item-align content--deco">5</div>
+    </div>
+
+    <h1>Flexbox - align-content : space-between</h1>
+    <div class="container-align-content-space-between align-content--deco">
+      <div class="item-align content--deco">1</div>
+      <div class="item-align content--deco">2</div>
+      <div class="item-align content--deco">3</div>
+      <div class="item-align content--deco">4</div>
+      <div class="item-align content--deco">5</div>
+    </div>
+
+    <h1>Flexbox - align-content : space-around</h1>
+    <div class="container-align-content-space-around align-content--deco">
+      <div class="item-align content--deco">1</div>
+      <div class="item-align content--deco">2</div>
+      <div class="item-align content--deco">3</div>
+      <div class="item-align content--deco">4</div>
+      <div class="item-align content--deco">5</div>
+    </div>
+
+
+  </body>
+</html>

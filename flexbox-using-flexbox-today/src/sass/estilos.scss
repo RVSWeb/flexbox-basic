@@ -1,0 +1,218 @@
+/*
+    Created on : 02-dic-2019, 13:04:56
+    Author     : Raul Vela
+*/
+
+/*Importar elementos externos*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+
+/*
+* Variables globales SASS para definir estilos
+*/
+$link-color: #0b9f8c;
+$light: #e0f2f4;
+$dark: #444;
+$rhythm: 16px;
+
+/*
+* Funcion global SASS para definir estilos usando las variables globales
+*/
+@mixin breakpoint($point) {
+  @if $point == wide {
+    @media (min-width: 70em) { @content ; }
+  }
+
+  /* anchura mediana */
+  @else if $point == medium {
+    @media (min-width: 50em) { @content ; }
+  }
+
+  /* narrow = Estrecho */
+  @else if $point == narrow {
+    @media (min-width: 40em)  { @content ; }
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+* Clase que definen estilos usando las funciones y sus variables globales
+* - Seleccionamos la 'clase' y dentro 
+* - asignamos la función que queremos ejecutar y sus modificadores
+*/ 
+.wrapper {
+  @include breakpoint(narrow) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include breakpoint(wide) {
+    flex-direction: column;
+  }
+}
+
+.hamburger-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.hamburger-label {
+  position: absolute;
+  top: ($rhythm * 2);
+  left: ($rhythm * 2);
+  z-index: 1;
+  display: block;
+  width: 42px;
+  height: 42px;
+  font: 42px/42px fontawesome;
+  text-align: center;
+  color: $dark;
+  cursor: pointer;
+
+  @include breakpoint(wide) {
+    display: none;
+  }
+  
+}
+
+.hamburger-label:hover,
+.hamburger-checkbox:checked ~ .hamburger-label:hover:before {
+  color: $link-color;
+}
+
+.hamburger-checkbox:checked ~ .hamburger-label {
+  color: $dark;
+}
+
+.hamburger-checkbox:checked ~ .hamburger-label:before {
+  content: '\f00d';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 42px;
+  height: 42px;
+  font: 42px/42px fontawesome;
+  text-align: center;
+  color: $light;
+}
+
+.content {
+  display: block; /* IE needs this */
+  min-height: 100vh;
+  padding: ($rhythm * 3) ($rhythm * 2);
+  background: $light;
+  color: $dark;
+
+  @include breakpoint(narrow) {
+    flex: 1 1 0%;
+  }
+
+  @include breakpoint(wide) {
+    flex: 0 0 auto; /* IE 10 needs this */
+    padding-top: 1px;
+  }
+}
+
+.hamburger-checkbox:checked ~ .content {
+  padding-top: 1px; /* prevent margin collapsing when it's not a flex item */
+
+  @include breakpoint(narrow) {
+    padding-top: ($rhythm * 3);
+  }
+}
+
+.menu {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  background: $dark;
+  color: $light;
+
+  @include breakpoint(narrow) {
+    display: flex;
+    height: auto;
+  }
+
+  @include breakpoint(wide) {
+    flex: 0 0 auto; /* Safari needs this, due to https://github.com/philipwalton/flexbugs#1-minimum-content-sizing-of-flex-items-not-honored */
+    width: auto;
+    height: auto;
+    padding-top: 0;
+  }
+}
+
+/* "~" obliga al selector 'b' sea hermano del selector 'a' */
+.hamburger-checkbox:checked ~ .menu {
+  width: auto;
+  height: auto;
+  padding-top: 6.5em;
+
+  @include breakpoint(narrow) {
+    min-height: 100vh;
+  }
+
+  @include breakpoint(wide) {
+    min-height: 0;
+    padding-top: 0;
+  }
+}
+
+.menu-list {
+  list-style: none;
+
+  li {
+    padding: $rhythm ($rhythm * 2);
+    border-top: 1px solid darken($dark, 10%);
+
+    @include breakpoint(narrow) {
+      display: flex;
+      align-items: center;
+      flex: 1 0 auto;
+    }
+
+    @include breakpoint(wide) {
+      display: inline-block; /* IE 9 needs this */
+      flex: 0 0 auto;
+      border: none;
+    }
+  }
+
+  @include breakpoint(narrow) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include breakpoint(wide) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center; /* IE 9 fallback */
+  }
+}
+
+/* Decorative styles unrelated to the demo */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  margin: ($rhythm * 2) 0;
+  font-weight: 300;
+  font-size: 200%;
+}
+
+p {
+  margin: 0 0 $rhythm 0;
+}
+
+a {
+  color: $link-color;
+  font-weight: 600;
+}

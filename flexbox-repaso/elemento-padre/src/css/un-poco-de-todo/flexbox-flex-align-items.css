@@ -1,0 +1,217 @@
+/* 
+    Created on : 21-nov-2019, 22:11:53
+    Author     : RVS
+*/
+
+.title{
+  width: 50%;
+  height: auto;
+  margin: 1% auto;
+  text-align: center;
+}
+
+.title--deco {
+  background: #CCC;
+}
+
+/*
+* Flexbox - Propiedad Hijo - align-items : "Alinear elementos"
+* 1º Ejemplo
+*/ 
+.flex-container-center {
+  width: 250px;
+  height: 150px;
+
+  padding: 5px;
+  margin: 10px auto;
+  background: #124678;
+
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+
+  flex-flow: row wrap;
+
+}
+
+.flex-container-center.flex-start {
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+
+.flex-item{
+  display: inherit;
+  width: 50px;  
+
+  background: #ccc;
+  margin: 5px;
+}
+
+.flex-container-center .flex-item p,
+.flex-container-center .flex-item h1,
+.flex-container-center .flex-item h3{
+  width: 100%;
+  text-align: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin: 10px;
+  color: black;
+}
+
+.container-item {
+  width: 80px;
+  height: auto;
+
+  align-content: space-around;
+  margin: 1% 1%;
+
+}
+
+.item--deco {
+  text-align: center;
+  font-family: Roboto , sans-serif;
+  font-size: .8em;
+  border: 1px solid #000;
+  background: #CCC;
+}
+
+/*
+* Flexbox - Propiedad Hijo - align-items : "Alinear elementos"
+* 2º Ejemplo
+*/
+
+.flex-container-baseline {
+  width: auto;
+  height: auto;
+  padding: 5px;
+
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  flex-flow: row wrap;
+  align-items: baseline;
+} 
+
+.flex-baseline--deco { 
+  background-color: #124678;
+  border: 5px solid #000;
+  border-radius: 7px;
+}
+
+.item-child {
+  width: 150px;
+  height: auto;
+} 
+
+.item-child-deco {
+  border: 1px solid #000;
+  background: #CCC;
+}
+
+.paragraph{
+  margin: 5%;
+  text-align: center;
+  border: 1px solid #000;
+  background: #777;
+}
+
+.div-text-h1{
+  margin: 5%;
+  color: red; 
+  border: 1px solid red;
+}
+
+.div-text-h3{
+  margin: 5%;
+  color: green; 
+  border: 1px solid green;
+}
+
+.span-text{
+  color: blue; 
+  border: 1px solid blue;
+}
+
+.div-text{
+  margin: 5%;
+  color: brown; 
+  border: 1px solid brown;
+}
+
+/*
+* Flexbox - Propiedad Hijo - align-items : flex-end
+* 3º Ejemplo
+*/
+
+.flex-container-flex-end {
+  width: auto;
+  height: 150px;
+
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  
+  flex-flow: row wrap;
+  align-items: flex-end;
+
+}
+
+.flex-end {
+  background: #124678;
+}
+
+.flex-item{
+  width: 100px;
+  height: auto;
+  border: 1px solid #f00;
+}
+
+.flex-sub-item{
+  text-align: center;
+  color: #000;
+}
+
+.flex-sub-item-img{
+  width: 100%;
+  max-width: 300px;
+
+  height: auto;
+  max-height: fit-content;
+
+}
+
+/*
+* Flexbox - Propiedad Hijo - align-items : "Alinear elementos"
+* 1º Ejemplo
+*/
+
+.flex-container-strech {
+  width: auto;
+  height: 300px;
+
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  flex-flow: row wrap;
+  align-items: stretch;
+
+}
+
+.flex-strech {
+  background: #124678;  
+}
+ 
+.flex-center {
+  background: #124678;
+}
+
+.flex-sub-item-strech{
+  font-family: Roboto , sans-serif;
+  font-size: 2em;
+  text-align: center;
+}

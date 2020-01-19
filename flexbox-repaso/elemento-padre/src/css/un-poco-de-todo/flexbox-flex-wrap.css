@@ -1,0 +1,155 @@
+/* 
+    Created on : 21-nov-2019, 11:16:17
+    Author     : RVS
+*/
+
+/*
+* Flexbox - flex-wrap : nowrap
+*
+*/
+
+.title{
+  text-align: center;
+}
+
+.paragraph {
+  font-size: 0.5em;
+  font-family: Roboto, sans-serif;
+
+  padding: 0.5%;
+  background: #99ffff;
+  border-radius: 7px;
+}
+
+/*
+* Contenedor flex principal
+*
+*/
+.flex-container-1 {
+  width: 300px;
+  height: 150px;
+  padding: 5px;
+  margin: 10px auto;
+
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+
+  background: #124678;
+}
+
+.flex-container-baseline {
+  width: 300px;
+  height: 150px;
+  padding: 5px;
+  margin: 10px auto;
+
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flexbox;
+  flex-direction: column;
+
+  background: #124678;
+}
+
+.flex-container-3 , 
+.flex-container-4 {
+  width: 300px;
+  height: 150px;
+  padding: 5px;
+  margin: 10px auto;
+
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flexbox;
+
+  background: #124678;
+}
+
+
+/*
+* Flexbox - flex-wrap : nowrap
+*
+*/
+.flex-container-1.nowrap {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+/*
+* Flexbox - flex-wrap : nowrap
+*
+*/
+.flex-container-baseline.nowrap-2 {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+/*
+* Flexbox - flex-wrap : wrap
+*
+*/
+.flex-container-3.wrap {
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+/*
+* Flexbox - flex-wrap : wrap-reverse
+*
+*/
+.flex-container-4.wrap-reverse {
+  flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap-reverse;
+  -webkit-flex-wrap: wrap-reverse;
+}
+
+.item--deco-1 , 
+.item-child-deco , 
+.item--deco-3 , 
+.item--deco-4 {
+  text-align: center;
+  font-size: 2em;
+  background: #CCC;
+}
+
+.title-2{
+  text-align: center;
+  margin: 5% 0 0 0;
+}
+
+.flex-item-1{
+  width: 50px;
+  height: 45px;
+  margin: 6px;
+  padding: 6%;
+
+  background-color: #ccc;
+}
+
+.item-child {
+  width: 50px;
+  margin: 1%;
+  padding: 1%;
+} 
+
+.flex-item-3 , 
+.flex-item-4 {
+  width: 50px;
+  height: 50px;
+  margin: 1%;
+} 
+
+p {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+
+  align-self: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+}

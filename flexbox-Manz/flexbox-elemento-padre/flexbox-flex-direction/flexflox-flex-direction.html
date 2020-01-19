@@ -1,0 +1,79 @@
+<!-- 
+Created on : 25-nov-2019 11:06:05 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexflox-flex-direction</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexflox-flex-direction">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      h1 {
+        width: fit-content;
+        height: auto;
+        margin: 2% auto;
+        padding: 2%;
+
+        text-align: center;
+        text-transform: capitalize;
+        background: #6ba8a9;
+      }
+
+      .container-row {
+        width: fit-content;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+
+        padding: 1%;
+        background: #357376;
+      }
+
+      .container-column {
+        width: max-content;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+        padding: 1%;
+        background: #357376;
+      }
+
+      .item {
+        font-family: Roboto , sans-serif;
+        font-size: 3em;
+        border: 1px solid #f00;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>flexbox-direction : row</h1>
+    <div class="container-row">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+
+    <h1>flexbox-direction : column</h1>
+    <div class="container-column">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>

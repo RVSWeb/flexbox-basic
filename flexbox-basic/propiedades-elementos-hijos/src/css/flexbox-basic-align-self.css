@@ -1,0 +1,91 @@
+/* 
+    Created on : 13-nov-2019, 16:50:43
+    Author     : RVS
+*/
+
+body{
+  box-sizing: content-box;
+  font-family: 'Raleway', sans-serif;
+  background: #e3fdfd;
+}
+
+.header-top {
+  width: 25%;
+  margin: 1% auto;
+  padding: 1%;
+}
+
+.top--deco {
+  border-radius: 7px;
+  background: #a6e3e9;
+}
+
+.title-top {
+  padding: 1%;
+}
+
+.title--deco {
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 7px;
+  background: #71c9ce;
+}
+
+h5{
+  width: 50%;
+}
+
+.container-column-align-self {
+  width: fit-content;
+  height: 200px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.column-align--deco-4 {
+  border: 5px solid #000;
+  background-color: #777;
+}
+
+.item-align-self {
+  width: fit-content;
+  height: 50px;
+
+}
+
+.item-1-align-self ,
+.item-2-align-self ,
+.item-3-align-self ,
+.item-4-align-self ,
+.item-5-align-self ,
+.item-6-align-self ,
+.item-7-align-self {
+  font-weight: bolder;
+  text-align: center;
+  border: 1px solid #fff;
+  background: #00adb5;
+}
+
+.item-1-align-self{
+  align-self: center;
+}
+
+.item-2-align-self{
+  align-self: baseline;
+}
+
+.item-3-align-self{
+  align-self: flex-end;
+}
+
+.item-4-align-self{
+  align-self: flex-start;
+}
+
+.item-5-align-self{
+  align-self: stretch;
+}
+
+.item-6-align-self{
+  align-self: auto;
+}

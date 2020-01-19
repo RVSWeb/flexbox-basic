@@ -1,0 +1,230 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 02-dic-2019, 13:04:56
+    Author     : Raul Vela
+*/
+/*Importar elementos externos*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+/*
+* Variables globales SASS para definir estilos
+*/
+/*---------------------*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+@media (min-width: 40em) {
+  .wrapper {
+    display: flex;
+    flex-direction: row; 
+  } 
+}
+
+@media (min-width: 70em) {
+  .wrapper {
+    flex-direction: column; 
+  } 
+}
+
+.hamburger-checkbox {
+  position: absolute;
+  opacity: 0; 
+}
+
+.hamburger-label {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  z-index: 1;
+  display: block;
+  width: 42px;
+  height: 42px;
+  font: 42px/42px fontawesome;
+  text-align: center;
+  color: #444;
+  cursor: pointer; 
+}
+
+@media (min-width: 70em) {
+  .hamburger-label {
+    display: none; } 
+}
+
+.hamburger-label:hover,
+.hamburger-checkbox:checked ~ .hamburger-label:hover:before {
+  color: #0b9f8c; 
+}
+
+.hamburger-checkbox:checked ~ .hamburger-label {
+  color: #444; 
+}
+
+.hamburger-checkbox:checked ~ .hamburger-label:before {
+  content: '\f00d';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 42px;
+  height: 42px;
+  font: 42px/42px fontawesome;
+  text-align: center;
+  color: #e0f2f4;
+}
+
+.content {
+  display: block;
+  /* IE needs this */
+  min-height: 100vh;
+  padding: 48px 32px;
+  background: #e0f2f4;
+  color: #444; 
+}
+
+@media (min-width: 40em) {
+  .content {
+    flex: 1 1 0%; 
+  } 
+}
+
+@media (min-width: 70em) {
+  .content {
+    flex: 0 0 auto;
+    /* IE 10 needs this */
+    padding-top: 1px; 
+  }
+}
+
+.hamburger-checkbox:checked ~ .content {
+  padding-top: 1px;
+  /* prevent margin collapsing when it's not a flex item */ }
+@media (min-width: 40em) {
+  .hamburger-checkbox:checked ~ .content {
+    padding-top: 48px; 
+  } 
+}
+
+.menu {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  background: #444;
+  color: #e0f2f4;
+}
+
+@media (min-width: 40em) {
+  .menu {
+    display: flex;
+    height: auto; 
+  } 
+}
+
+@media (min-width: 70em) {
+  .menu {
+    flex: 0 0 auto;
+    /* Safari needs this, 
+    due to 
+    https://github.com/philipwalton/flexbugs#1-minimum-content-sizing-of-flex-items-not-honored */
+    width: auto;
+    height: auto;
+    padding-top: 0; } 
+}
+
+.hamburger-checkbox:checked ~ .menu {
+  width: auto;
+  height: auto;
+  padding-top: 6.5em; 
+}
+
+@media (min-width: 40em) {
+
+  .hamburger-checkbox:checked ~ .menu {
+    min-height: 100vh;
+  } 
+}
+
+@media (min-width: 70em) {
+
+  .hamburger-checkbox:checked ~ .menu
+  {
+    min-height: 0;
+    padding-top: 0; 
+  } 
+}
+
+.menu-list {
+  list-style: none; 
+}
+
+.menu-list li {
+  padding: 16px 32px;
+  border-top: 1px solid #2b2b2b; 
+}
+
+@media (min-width: 40em) {
+  .menu-list li {
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+  } 
+}
+
+@media (min-width: 70em) {
+  .menu-list li {
+    display: inline-block;
+    /* IE 9 needs this */
+    flex: 0 0 auto;
+    border: none; 
+  }
+}
+
+@media (min-width: 40em) {
+  .menu-list {
+    display: flex;
+    flex-direction: column; 
+  }
+}
+
+@media (min-width: 70em) {
+  .menu-list {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    /* IE 9 fallback */ 
+  } 
+}
+
+/* Decorative styles unrelated to the demo */
+body {
+  font-family: 'Open Sans', sans-serif; 
+}
+
+h1 {
+  margin: 32px 0;
+  font-weight: 300;
+  font-size: 200%; 
+}
+
+p {
+  margin: 0 0 16px 0; 
+}
+
+a {
+  color: #0b9f8c;
+  font-weight: 600; 
+}
+
+/*# sourceMappingURL=estilos.css.map */

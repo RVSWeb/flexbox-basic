@@ -1,0 +1,50 @@
+/* 
+    Created on : 20-nov-2019, 20:11:31
+    Author     : RVS
+*/
+
+.container-columns{
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.container-flex-inline{
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item-flex { 
+  width: 100px;
+  height: 100px;
+
+  margin: 1% 0;
+  font-size: 1.8em;
+  font-family: Bookman , sans-serif;
+  color: #fff;
+}
+
+.item-flex-inline {
+  width: 100px;
+  height: 100px;
+
+  font-size: 1.2em;
+  font-family: Roboto , sans-serif;
+  background: #00adb5;
+}
+
+.item--deco{
+  border: 1px solid #f00;
+  text-align: center;
+  line-height: 90px;
+  color: #fff;
+  background: #00cccc;
+}

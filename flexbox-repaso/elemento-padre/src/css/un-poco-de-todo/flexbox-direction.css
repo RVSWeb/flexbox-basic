@@ -1,0 +1,83 @@
+/* 
+    Created on : 21-nov-2019, 10:05:33
+    Author     : RVS
+*/
+
+.title{
+  width: 20%;
+  background: #00adb5;
+  
+  text-align: center;
+  font-size: 2em;
+  font-family: Roboto , sans-serif;
+}
+
+.container-columns{
+  width: 200px;
+  background: #124678;
+}
+
+.flex-container-center{
+  width: 300px;
+}
+
+.flex-container-center.flex-row{ 
+  display: flex;
+  display:-webkit-flex; 
+  display: -ms-flexbox; 
+
+  flex-direction: row; 
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+}
+
+.flex-container-center.row-reverse{ 
+  display: flex;
+  display:-webkit-flex; 
+  display: -ms-flexbox; 
+
+  flex-direction: row-reverse; 
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+}
+
+.flex-container-center.flex-column{ 
+  display: flex;
+  display:-webkit-flex; 
+  display: -ms-flexbox; 
+
+  flex-direction: column; 
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.flex-container-center.column-reverse{ 
+  display: flex;
+  display:-webkit-flex; 
+  display: -ms-flexbox; 
+
+  flex-direction: column-reverse; 
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+
+  background: #124678;
+}
+
+.flex-item{
+  width: 50px;
+  height: 50px;
+
+  background: #CCC;
+  text-align: center;
+  font-weight: bolder;
+  border: 1px solid #000;
+}
+
+.paragraph {
+  width: 20%;
+  margin: 1% 0;
+  padding: 1%;
+  
+  background: #2795ee;
+  font-family: Roboto , sans-serif;
+}

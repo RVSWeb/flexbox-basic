@@ -1,0 +1,119 @@
+<!-- 
+Created on : 02-dic-2019 19:41:01 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-p71-creating-the-block-flex-container</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexbox-p71-creating-the-block-flex-container">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      *{
+        font-family: Roboto , sans-serif;
+        box-sizing: border-box;
+      }
+
+      .section-main {
+        width: content-box;
+        padding: 0.5%;
+      } 
+
+      .main--deco {
+        background-image: url("src/img/fondo.PNG");
+        background-size: auto;
+        background-clip: border-box;
+        background-repeat: no-repeat;
+      }
+
+      .container {
+        width: 30%;
+        margin: 2% 2%;
+        padding: 1.5%;
+        /*background-image: url(C:\_NB\CSS-Conceptos-Basico\public_html\flexbox\flexbox-using-flexbox-today\src\img);*/
+      }
+
+      .container--deco{
+        color: #0033cc;
+        border : 1px solid #ccc;
+        background-color: #fff;
+      }
+
+      .title {
+        margin: 2% 0;
+      } 
+
+      .title--deco{
+
+      }
+
+      .iw_mini_details_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      .iw_mini_review_score_wrapper {
+        /*float: left;*/
+        padding: 1.5%;
+        flex: 0 1 auto;
+        text-align: center;
+      }
+
+      .score--deco {
+        background-color: #0000ff;
+        color: #fff;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+
+      .text {
+        margin-right: 30%;
+        flex: 0 1 auto;
+      }      
+
+      .text--deco {
+        text-align: center;
+        color: #0000ff;
+      }
+
+      .iw_mini_price_wrapper {
+        /*float: right;*/
+        flex: 0 1 auto;
+      }
+
+      .price--deco {
+        font-weight: bolder;
+        color: #00cc33;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <section class="section-main main--deco">
+      <div class="container container--deco">
+        <h4 class="title title--deco">Dikker on Thijs Fenice Hotel</h4>
+        <div class="iw_mini_details_wrapper">
+          <div class="iw_mini_review_score_wrapper score--deco">8.2</div>
+          <span class="text text--deco">Very good</span>
+          <div  class="iw_mini_price_wrapper price--deco">
+            €125.17</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

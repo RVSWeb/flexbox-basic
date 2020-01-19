@@ -1,0 +1,62 @@
+<!-- 
+Created on : 12-nov-2019 12:31:45 
+User : Raul Vela 
+Ref : https://stackoverflow.com/questions/42613359/how-does-flex-wrap-work-with-align-self-align-items-and-align-content
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Flexbox Flex Nowrap</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="Flexbox Flex Nowrap">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <link rel="stylesheet" type="text/css" href="src/css/flexbox-flex-nowrap.css">
+
+  </head>
+  <body>
+
+    <h1>Flex con la propiedad - flex-wrap : nowrap </h1>
+    <h2>Los elementos hijos 'items' </h2>
+
+    <main class="main-box box--deco">
+      <p class="main__paragraph paragraph--deco">Column & nowrap</p>
+      <div class="flex-container-column">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+      </div>
+      
+
+      <p class="main__paragraph paragraph--deco">Row & nowrap</p>
+      <div class="flex-container-row">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+      </div>
+      
+      <p class="main__paragraph paragraph--deco">Row & wrap</p>
+      <div class="flex-container-row-wrap">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+      </div>
+
+    </main>
+
+  </body>
+</html>

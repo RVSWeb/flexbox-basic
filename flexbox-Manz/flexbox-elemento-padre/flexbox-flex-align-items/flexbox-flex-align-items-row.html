@@ -1,0 +1,123 @@
+<!-- 
+Created on : 25-nov-2019 22:25:16 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-flex-align-items</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexbox-flex-align-items">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      .title{
+        width: fit-content;
+        margin: 2% auto;
+        padding: 2%;
+        font-family: Roboto , sans-serif;
+        text-align: center;
+        border-radius: 7px;
+        background: #ccffff;
+      }
+
+      .flex-container-flex-start {
+        align-items: flex-start;
+      }
+
+      .flex-container-center {
+        align-items: center;
+      }
+
+      .flex-container-flex-end {
+        align-items: flex-end;
+      }
+
+      .flex-container-strech {
+        align-items: stretch;
+      }
+
+      .flex-container-baseline {
+        align-items: baseline;
+      }
+
+      .container--deco{
+        display: flex;
+        flex-flow: row wrap;
+        height: 300px;
+        width: content-box;
+        box-sizing: border-box;
+        background-color: DodgerBlue;
+      }
+
+      .item {
+        width: 100px;
+        margin: 10px;
+      }
+
+      .item--deco {
+        font-family: Roboto , sans-serif;
+        font-size: 30px;
+        text-align: center;
+        line-height: 75px;
+        background-color: #f1f1f1;
+        border-radius: 7px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1 class="title">align-items : flex-start</h1>
+    <div class="flex-container-flex-start container--deco">
+      <div class="item item--deco"><h1>1</h1></div>
+      <div class="item item--deco"><h6>2</h6></div>
+      <div class="item item--deco"><h3>3</h3></div>
+      <div class="item item--deco"><span>4</span></div>
+
+    </div>
+
+    <h1 class="title">align-items : baseline</h1>
+    <div class="flex-container-baseline container--deco">
+      <div class="item item--deco"><h1>1</h1></div>
+      <div class="item item--deco"><h6>2</h6></div>
+      <div class="item item--deco"><h3>3</h3></div>
+      <div class="item item--deco"><span>4</span></div>
+    </div>
+
+    <h1 class="title">align-items : center</h1>
+    <div class="flex-container-center container--deco">
+      <div class="item item--deco"><h1>1</h1></div>
+      <div class="item item--deco"><h6>2</h6></div>
+      <div class="item item--deco"><h3>3</h3></div>
+      <div class="item item--deco"><span>4</span></div>
+    </div>
+
+    <h1 class="title">align-items : flex-end</h1>
+    <div class="flex-container-flex-end container--deco">
+      <div class="item item--deco"><h1>1</h1></div>
+      <div class="item item--deco"><h6>2</h6></div>
+      <div class="item item--deco"><h3>3</h3></div>
+      <div class="item item--deco"><span>4</span></div>
+
+    </div>
+
+    <h1 class="title">align-items : strech</h1>
+    <div class="flex-container-strech container--deco">
+      <div class="item item--deco"><h1>1</h1></div>
+      <div class="item item--deco"><h6>2</h6></div>
+      <div class="item item--deco"><h3>3</h3></div>
+      <div class="item item--deco"><span>4</span></div>
+    </div>
+
+  </body>
+</html>

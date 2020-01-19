@@ -1,0 +1,115 @@
+<!-- 
+Created on : 25-sep-2019 20:42:36 
+User : Raul Vela 
+Name archive : flexbox-image-gallery
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox image gallery</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexbox image gallery">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+
+      * {
+        box-sizing: border-box;
+        border-radius: 12px;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+
+      .header {
+        text-align: center;
+        padding: 32px;
+      }
+
+      /*
+      * Elementos flex-box 
+      */
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 0 4px;
+      }
+
+      /* Create four equal columns that sits next to each other */
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+
+      .column img {
+        margin-top: 1px;
+        vertical-align: middle;
+      }
+
+      img{
+        width: 100%;
+      }
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Responsive Image Grid</h1>
+      <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row"> 
+      <div class="column">
+        <img src="../../../css-grid-concept-basic/css-grid/src/img/cuadrados-de-colores/caja-100x200px.jpg">
+        <img src="../../../css-grid-concept-basic/css-grid/src/img/cuadrados-de-colores/caja-100x100px.jpg">
+      </div>
+
+      <div class="column">
+        <img src="../../../css-grid-concept-basic/css-grid/src/img/cuadrados-de-colores/caja-100x200px.jpg">
+        <img src="../../../css-grid-concept-basic/css-grid/src/img/cuadrados-de-colores/caja-100x100px.jpg">
+      </div>
+
+      <div class="column">
+        <img src="../../../css-grid-concept-basic/css-grid/src/img/cuadrados-de-colores/caja-100x200px.jpg">
+        <img src="../../../css-grid-concept-basic/css-grid/src/img/cuadrados-de-colores/caja-100x100px.jpg">
+      </div>
+
+      <div class="column">
+        <img src="../../../css-grid-concept-basic/css-grid/src/img/cuadrados-de-colores/caja-100x200px.jpg">
+        <img src="../../../css-grid-concept-basic/css-grid/src/img/cuadrados-de-colores/caja-100x100px.jpg">
+      </div> 
+    </div>
+
+  </body>
+</html>

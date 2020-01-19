@@ -1,0 +1,78 @@
+<!-- 
+Created on : 02-dic-2019 19:41:01 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-p71-creating-the-block-flex-container</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexbox-p71-creating-the-block-flex-container">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      *{
+        font-family: Roboto , sans-serif;
+        box-sizing: border-box;
+      }
+
+      .container{
+        margin: 2%;
+        width: 25%;
+        color: #0033cc;
+        border : 1px solid #ccc;
+      }
+
+      .iw_mini_details_wrapper {
+        display: flex;
+      }
+
+      .iw_mini_review_score_wrapper {
+        float: left;
+      }
+
+      .score--deco {
+        background-color: #0000ff;
+        color: #fff;
+      }
+
+      .text {
+        display: inline-block;
+        margin: 0 25% 0 2%;
+      }      
+
+      .text--deco {
+        color: #0000ff;
+      }
+
+      .iw_mini_price_wrapper {
+        float: right;
+      }
+
+      .price--deco {
+        font-weight: bolder;
+        color: #00cc33;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h4>Dikker on Thijs Fenice Hotel</h4>
+      <div class="iw_mini_details_wrapper">
+        <div class="iw_mini_review_score_wrapper score--deco">8.2</div>
+        <span class="text text--deco">Very good</span>
+        <div  class="iw_mini_price_wrapper price--deco">€125.17</div>
+      </div>
+    </div>
+  </body>
+</html>

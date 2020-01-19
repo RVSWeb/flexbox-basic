@@ -1,0 +1,144 @@
+<!-- 
+Created on : 25-nov-2019 17:00:31 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-justify-content</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content=".">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      h1{
+        width: fit-content;
+        margin: 2% auto;
+        padding: 1%;
+        
+        text-align: center;
+        border-radius: 7px;
+        background: #46b3e6;
+      }
+      
+      .container-justify-content {
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+
+      .container-justify-flex-end {
+        flex-flow: row wrap;
+        justify-content: flex-end;
+      }
+
+      .container-justify-space-between{
+        flex-flow: row wrap;
+        justify-content: space-between;
+      }
+
+      .container-justify-space-around {
+        flex-flow: row wrap;
+        justify-content: space-around;
+      }
+
+      .justify-content--deco {
+        width: content-box;
+        height: auto;
+
+        display: flex;
+
+        box-sizing: border-box;
+        background: #6ba8a9;
+      }
+
+      .item {
+        width: 150px;
+        height: 150px;
+      }
+
+      .item--deco {
+        font-family: Roboto , sans-serif;
+        font-size: 2em;
+        line-height: 140px;
+        text-align: center;
+        border: 2px solid #1d4d4f;
+        background: #e5dfdf;
+      }
+
+      .num {
+        width: 1%;
+        height: 1%;
+        padding: 5%;
+      }
+
+      .num--deco {
+        background: #46b3e6; 
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>justify-content : center</h1>
+    <div class="container-justify-content justify-content--deco">
+      <div class="item item--deco">
+        <span class="num num--deco">1</span>
+      </div>
+      <div class="item item--deco">
+        <span class="num num--deco">2</span>
+      </div>
+      <div class="item item--deco">
+        <span class="num num--deco">3</span>
+      </div>
+    </div>
+
+    <h1>justify-content : flex-end</h1>
+    <div class="container-justify-flex-end justify-content--deco">
+      <div class="item item--deco">
+        <span class="num num--deco">1</span>
+      </div>
+      <div class="item item--deco">
+        <span class="num num--deco">2</span>
+      </div>
+      <div class="item item--deco">
+        <span class="num num--deco">3</span>
+      </div>
+    </div>
+
+    <h1>justify-content : space-between</h1>
+    <div class="container-justify-space-between justify-content--deco">
+      <div class="item item--deco">
+        <span class="num num--deco">1</span>
+      </div>
+      <div class="item item--deco">
+        <span class="num num--deco">2</span>
+      </div>
+      <div class="item item--deco">
+        <span class="num num--deco">3</span>
+      </div>
+    </div>
+
+    <h1>justify-content : space-around</h1>
+    <div class="container-justify-space-around justify-content--deco">
+      <div class="item item--deco">
+        <span class="num num--deco">1</span>
+      </div>
+      <div class="item item--deco">
+        <span class="num num--deco">2</span>
+      </div>
+      <div class="item item--deco">
+        <span class="num num--deco">3</span>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,197 @@
+/* 
+    Created on : 04-dic-2019, 17:22:29
+    Author     : RVS
+*/
+
+body , html {
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto Condensed" , sans-serif;
+  line-height: 180%;
+  color: #444;
+  text-align: center;
+}
+
+.main-text {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center; 
+}
+
+.foto1{
+  background-image: url("../img/parallex-ninia-1920x1280.jpg");
+  min-height: 100%;
+}
+
+.foto2{
+  background-image: url("../img/parallex-dj-1920x1280.jpg");
+  min-height: 60%;
+}
+
+.foto3{
+  background-image: url("../img/parallex-concierto-2-1920x1440.jpg");
+  min-height: 40%;
+}
+
+.foto4{
+  background-image: url("../img/parallex-concierto-1-1438x1280-2.jpg");
+  min-height: 100%;
+}
+
+.foto1 , 
+.foto2 , 
+.foto3 , 
+.foto4 {
+  position: relative;
+  opacity: 0.75;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Efecto Parallax -  Crear el efecto de movimiento del texto sobre las imagenes */
+  background-attachment: fixed; 
+} 
+
+.letrero , 
+.letrero1 , 
+.letrero2 , 
+.letrero3 , 
+.letrero4 {
+  width: 100%;
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-shadow: 0 0 10px #000;
+} 
+
+.letrero {
+  color: #fbfbfb;
+  font-size: 3em;
+  top: 50%;
+}
+
+.letrero2 {
+  color: #ffbc00;
+  font-size: 3em;
+  top: 60%;
+  text-shadow: 2px -3px #000;
+}
+
+.letrero3 {
+  color: #ff1919;
+  font-size: 4em;
+  top: 68%;
+  text-shadow: 2px -3px #000;
+}
+
+.letrero4 {
+  color: #fff;
+  font-size: 250%;
+  top: 45%;
+}
+
+section{
+  padding: 50px 80px;
+}
+
+.dark{
+  background: #444;
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px){
+
+  .letrero {
+    font-size: 4em;
+  }
+
+  .letrero2{
+    width: content-box;
+    height: auto;
+    margin: 0 auto;
+    font-weight: bolder;
+    font-size: 3.2em;
+  }
+
+  .letrero3{
+    width: content-box;
+    height: auto;
+    margin: 0 auto;
+    font-weight: bolder;
+    font-size: 4.5em;
+  }
+
+} 
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+  .letrero {
+    font-size: 3em;
+  }
+
+  .letrero2{
+    width: content-box;
+    height: auto;
+    margin: 0 auto;
+    font-weight: bolder;
+    font-size: 3em;
+  }
+
+  .letrero3{
+    width: content-box;
+    height: auto;
+    margin: 0 auto;
+    font-weight: bolder;
+    font-size: 4em;
+  }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+
+  .letrero {
+    font-size: 3em;
+  }
+
+  .letrero2{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 2.1em;
+    font-weight: bolder;
+  }
+
+  .letrero3{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    line-height: 50px;
+    font-size: 3.5em;
+    font-weight: bolder;
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px){
+
+  .letrero {
+    font-size: 3em;
+  }
+
+  .letrero2{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    font-weight: bolder;
+    font-size: 2.1em;
+  }
+
+  .letrero3{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    line-height: 1em;
+    font-weight: bolder;
+    font-size: 3.5em;
+  }
+
+}

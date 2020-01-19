@@ -1,0 +1,108 @@
+<!-- 
+Created on : 20-nov-2019 12:17:08 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-basic-row</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexbox basic row">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" 
+          href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      *{
+        box-sizing: content-box;
+      }
+
+      .title{
+        width: fit-content;
+        margin: 2% auto;
+        padding: 1%;
+      }
+
+      .title--deco{
+        font-family: Arial , sans-serif;
+        text-align: center;
+        background: #71c9ce;
+      }
+
+      div{
+        font-family: Roboto , sans-serif;
+        font-size: 1em;
+      }      
+
+      .container-columns {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+
+      .container--deco {
+        background: #71c9ce;
+      }
+
+      .flex-item {
+        width: 20%;
+        height: auto;
+        padding: 1%;
+        margin: 0.5% 0.5%;
+      }
+
+      .item--deco {
+        border: 1px solid #000;
+        border-radius: 12px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1 class="title title--deco">FlexBox : flex-direction</h1>
+
+    <div class="container-columns container--deco">
+      <div class="flex-item item--deco">
+        <p class="box__paragraph box__paragraph--deco">
+          Lorem ipsum dolor sit amet, 
+          consectetur adipisicing elit, 
+          sed do eiusmod tempor incididunt 
+          ut labore et dolore magna aliqua.        
+        </p>
+      </div>
+      <div class="flex-item item--deco">
+        <p class="box__paragraph box__paragraph--deco">
+          Lorem ipsum dolor sit amet, 
+          consectetur adipisicing elit, 
+          sed do eiusmod tempor incididunt 
+          ut labore et dolore magna aliqua.        
+        </p>
+      </div>
+      <div class="flex-item item--deco">
+        <p class="box__paragraph box__paragraph--deco">
+          Lorem ipsum dolor sit amet, 
+          consectetur adipisicing elit, 
+          sed do eiusmod tempor incididunt 
+          ut labore et dolore magna aliqua.        
+        </p>
+      </div>
+      <div class="flex-item item--deco">
+        <p class="box__paragraph box__paragraph--deco">
+          Lorem ipsum dolor sit amet, 
+          consectetur adipisicing elit, 
+          sed do eiusmod tempor incididunt 
+          ut labore et dolore magna aliqua.        
+        </p>
+      </div>
+    </div>
+
+</html>

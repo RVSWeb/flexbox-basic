@@ -1,0 +1,17 @@
+/* 
+    Created on : 03-dic-2019, 13:38:41
+    Author     : RVS
+*/
+
+.padre-1 {
+  border: 1px solid lightcoral;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.padre-1 div{
+  border: 1px solid lightgray;
+  padding: 100px;
+  font-size: 20px;
+}

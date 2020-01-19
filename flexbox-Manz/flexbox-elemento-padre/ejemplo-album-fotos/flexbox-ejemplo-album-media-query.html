@@ -1,0 +1,151 @@
+<!-- 
+Created on : 26-nov-2019 13:23:18 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-ejemplo-album-media-query</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content=".">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="theme-color" content="#4285f4">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<link rel="manifest" href="/site.webmanifest">-->
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      *{
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+
+      .title {
+        width: fit-content;
+        height: auto;
+
+        margin: 2% auto;
+        padding: 2%;
+      }
+
+      .title--deco {
+        font-family: Roboto , sans-serif;
+        border: 1px solid #ccc;
+      }
+
+      .paragraph {
+        width: fit-content;
+        height: auto;
+
+        margin: 2% auto;
+        padding: 2%;
+      }
+
+      .paragraph--deco {
+        font-family: Roboto , sans-serif;
+        font-size: 1.5em;
+        border: 1px solid #ccc;
+      }
+
+      .header {
+        text-align: center;
+        padding: 32px;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      .column{
+        flex: 25px;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+
+      @media screen and (max-width: 800px){
+
+        .column{
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 600px){
+
+        .column{
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1 class="title title--deco">
+      Responsive Image Grid
+    </h1>
+    <p class="paragraph paragraph--deco">
+      Resize the browser window to see the responsive effect.
+    </p>
+
+    <div class="row">
+
+      <div class="column">
+        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+      </div>
+
+      <div class="column">
+        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+      </div> 
+
+      <div class="column">
+        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+      </div>
+
+      <div class="column">
+        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+      </div>
+
+    </div>
+  </body>
+</html>

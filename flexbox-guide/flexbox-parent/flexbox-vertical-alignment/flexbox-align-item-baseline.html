@@ -1,0 +1,209 @@
+<!-- 
+Created on : 27-nov-2019 18:23:33 
+User : Raul Vela 
+Ref : https://codepen.io/flaviocopes/pen/oExoJR
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-justify-content-baseline</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexbox-justify-content-baseline">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      *{
+        box-sizing: border-box;
+        font-family: Roboto , sans-serif;
+      }
+
+      .title {
+        width: fit-content;
+        margin: 1% auto;
+        padding: 1%;
+      } 
+
+      .title--deco {
+        text-align: center;
+        background: #ffcccc;
+      }
+
+      .subtitle {
+        width: fit-content;
+        padding: 1%;
+        margin: 1%;
+      }
+
+      .subtitle--deco {
+        background: #ffcccc;
+      }
+
+      .subtitle-2 {
+        width: fit-content;
+        padding: 1%;
+        margin: 1%;
+      } 
+      
+      
+      .subtitle-2--deco {
+        background: #ccccff;
+      }
+
+
+      .flex-container {
+        display: flex;
+        margin-bottom: 2em;
+        background: #ffcccc;
+      }
+
+      .flex-baseline {
+        background: #ccccff;
+        align-items: baseline;
+      }
+
+      .flex-item {
+        padding: 1em;
+        border: 1px solid #fff;
+      }
+
+      .second {
+        font-size: 1.5em;
+      }
+
+      .third {
+        padding-top: 50px;
+        font-size : .8em;
+      }
+
+      .css-mine{
+        width: fit-content;
+        padding: 0.5%;
+        margin: 0 2%;
+      }
+
+      .link {
+        font-size: 2em;
+        width: 30%;
+        height: 300px;
+      }
+
+      .link--deco {
+        text-decoration: none;
+      }
+
+      .link--deco:hover {
+        color: #000066;
+      }
+
+
+    </style>
+
+  </head>
+  <body>
+
+    <h1 class="title title--deco"> Flexbox demo : baseline</h1>
+
+    <h2 class="subtitle subtitle--deco">Without 
+      <code>align-items : baseline</code>
+    </h2>
+
+    <div class="flex-container">
+      <div class="flex-item first">
+        <p>
+          Dolores modi ex deserunt voluptate
+          voluptas consequuntur magnam aliquid!
+        </p>
+        <p>
+          Dolores modi ex deserunt voluptate
+          voluptas consequuntur magnam aliquid!
+        </p>
+      </div>
+
+      <div class="flex-item second">
+        <p>
+          Dolores modi ex deserunt voluptate
+          voluptas consequuntur magnam aliquid!
+        </p>
+        <p>
+          Dolores modi ex deserunt voluptate
+          voluptas consequuntur magnam aliquid!
+        </p>
+      </div>
+
+      <div class="flex-item third">
+        <p>
+          <input type="text" value="Input ipsum">
+        </p>
+        <p>
+          Reprehenderit fugit tenetur!
+          Dolores modi ex deserunt voluptate 
+          voluptas consequuntur magnam aliquid!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, 
+          consectetur adipisicing elit.
+        </p>
+      </div>
+    </div>
+
+    <h2 class="subtitle-2 subtitle-2--deco"> 
+      With <code>align-item: baseline</code>
+    </h2>
+
+    <div class="flex-container flex-baseline">
+
+      <div class="flex-item first">
+        <p>
+          Dolores modi ex deserunt voluptate
+          voluptas consequuntur magnam aliquid!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, 
+          consectetur adipisicing elit.
+        </p>
+      </div>
+
+      <div class="flex-item second">
+        <p>
+          Lorem ipsum dolor sit amet, 
+          consectetur adipisicing elit.
+
+          Dolores modi ex deserunt voluptate
+          voluptas consequuntur magnam aliquid!
+        </p>
+      </div>
+
+      <div class="flex-item third">
+        <p>
+          <input type="text" value="Input ipsum">
+        </p>
+        <p>
+          Reprehenderit fugit tenetur!
+          Dolores modi ex deserunt
+          voluptate voluptas consequuntur magnam aliquid!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+      </div>
+
+    </div>
+
+    <p class="css-mine">
+      <small>
+        <a class="link link--deco" href="http://www.cssmine.com/ebook/css3-flexbox" target="_blank">
+          (CSS3)
+        </a>
+      </small>
+    </p>
+
+  </body>
+</html>

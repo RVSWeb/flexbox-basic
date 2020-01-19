@@ -1,0 +1,78 @@
+<!-- 
+Created on : 30-nov-2019 0:39:25 
+User : Raul Vela 
+Ref : https://codepen.io/zomigi/pen/vKjbbY/
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-p41-full-width-nav-bar</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content=".">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <link rel="stylesheet" type="text/css" href="src/css/estilos.css">
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <input id="hamburger" type="checkbox" class="hamburger-checkbox">
+      <label for="hamburger" class="hamburger-label" 
+             role="button" aria-labelledby="menu">&#xf0c9;</label>
+
+      <nav role="navigation" class="menu">
+        <ul class="menu-list">
+          <li>Home</li>
+          <li>Publicaciones</li>
+          <li>Shop</li>
+          <li>Your Account</li>
+          <li>Contact Us</li>
+        </ul>
+      </nav>
+
+      <main role="main" class="content">
+        <h1>Pure CSS responsive flexbox nav</h1>
+        <p><strong>Resize your browser , 
+            both width and height , to see the effect
+          </strong>
+        </p>
+        <p>
+          This page uses <a href="http://caniuse.com/#feat=flexbox">flexbox</a>
+          to control the layout 'diseño,disposición,distribución' 
+          so that when the off-canvas menu becomes visible 
+          on the left side of the screen (medium-width windows)
+          , the content area can <strong>resize</strong> 
+          to fit the remaining width in the viewport , 
+          instead of overflowing the viewport and getting cut off 
+          (obteniendo el cortado) on the right side, 
+          as happens with most off-canvas menus
+        </p>
+
+        <p>
+          Flexbox also makes it possible for the menu to be 
+          <strong>full-width</strong> when it´s a horizontal bar
+          at the top of the screen (wide windows) , and 
+          <strong>full-height</strong> when it´s vertical on the side 
+          of the screen
+        </p>
+
+        <p>The menu´s visibility is toggled 'alternando' without
+          Javascript using the 
+          <a href="https://css-tricks.com/the-checkbox-hack/">
+            checkbox hack
+          </a>
+        </p>
+
+
+      </main>
+
+    </div>
+  </body>
+</html>

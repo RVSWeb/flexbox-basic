@@ -1,0 +1,87 @@
+<!-- 
+Created on : 28-nov-2019 20:45:28 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-child-grow-shrink-basis</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexbox-child-grow-shrink-basis">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+      
+      h1{
+        width: fit-content;
+        margin: 1% auto;
+        padding: 1%;
+        
+        text-transform: capitalize;
+        background: #9999ff;
+        text-align: center;
+      }
+      
+      .container {
+        width: content-box;
+        height: 200px;
+
+        display: flex;
+        flex-flow: row wrap;
+
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .container--deco {
+        background: #9999ff;
+      }
+
+      .item {
+        flex: 0 1 10%;
+        height: 20%;
+      }
+
+      .item-grow {
+        flex: 1 0 10%;
+        height: 17%;
+        background: #ff9999;
+        align-self: flex-end;
+      }
+
+      .item--deco {
+        border: 1px solid #000;
+        text-align: center;
+        font-family: Roboto , sans-serif;
+        font-size: 2em;
+        border-radius: 7px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <h1>flexbox-child : grow - shrink - basis</h1>
+
+    <div class="container container--deco">
+      <div class="item item--deco">1</div>
+      <div class="item item--deco">2</div>
+      <div class="item item--deco">3</div>
+      <div class="item-grow item--deco">4</div>
+      <div class="item item--deco">5</div>
+      <div class="item item--deco">6</div>
+      <div class="item item--deco">7</div>
+    </div>
+
+
+  </body>
+</html>

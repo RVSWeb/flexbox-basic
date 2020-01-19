@@ -1,0 +1,165 @@
+<!-- 
+Created on : 28-nov-2019 18:24:22 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-vertical-align-vertical</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content=".">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="theme-color" content="#4285f4">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<link rel="manifest" href="/site.webmanifest">-->
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      *{  
+        font-family: Roboto , sans-serif;
+        box-sizing: border-box;
+      }
+
+      h1{
+        width: fit-content;
+        margin: 1% auto;
+        padding: 1%;
+        text-align: center;
+        text-transform: capitalize;
+        background: #ccccff;
+        font-family: Roboto , sans-serif;
+      }
+
+      .container{
+        display: flex;
+        width: auto;
+        height: 300px;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        background: #ffcccc;
+        border: 1px solid #000;
+      }
+
+      .main-box {
+        display: flex;
+        flex-flow: row wrap;
+
+      }
+
+      .align-items-flex-start {
+
+        align-items: flex-start;
+      }
+
+      .align-items-flex-end {
+        align-items: flex-end;
+      }
+
+      .align-items-flex-center {
+        align-items: center;
+      }
+
+      .align-items-flex-baseline {
+        align-items: baseline;
+      }
+
+      .align-items-flex-stretch {
+        align-items: stretch;
+      }
+
+      .item{
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        font-size: 3em;
+        line-height: calc(100% + 100%);
+        border: 1px solid #000;
+        background: #9999ff;
+      }
+
+      .item-stretch{
+        width: 100px;
+        text-align: center;
+        font-size: 3em;
+        line-height: calc(500% + 50%);
+        background: #9999ff;
+        border: 1px solid #000;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>flexbox-vertical-alignment : align-vertical</h1>
+    <div class="container">
+      <div class="main-box align-items-flex-start">
+        <div class="item item--deco">1</div>
+        <div class="item item--deco">2</div>
+        <div class="item item--deco">3</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="main-box align-items-flex-end">
+        <div class="item item--deco">1</div>
+        <div class="item item--deco">2</div>
+        <div class="item item--deco">3</div>        
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="main-box align-items-flex-center">
+        <div class="item item--deco">1</div>
+        <div class="item item--deco">2</div>
+        <div class="item item--deco">3</div>        
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="main-box align-items-flex-baseline">
+        <div class="item item--deco">1</div>
+        <div class="item item--deco">2</div>
+        <div class="item item--deco">3</div>        
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="main-box align-items-flex-stretch">
+        <div class="item-stretch item--deco">1</div>
+        <div class="item-stretch item--deco">2</div>
+        <div class="item-stretch item--deco">3</div>        
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="main-box align-items-flex-start">
+        <div class="item item--deco">1</div>
+      </div>
+      <div class="main-box align-items-flex-end">        
+        <div class="item item--deco">1</div>
+      </div>
+      <div class="main-box align-items-flex-center">
+        <div class="item item--deco">1</div>
+      </div>
+      <div class="main-box align-items-flex-start">
+        <div class="item item--deco">1</div>
+      </div>
+      <div class="main-box align-items-flex-end">        
+        <div class="item item--deco">1</div>
+      </div>
+      <div class="main-box align-items-flex-center">
+        <div class="item item--deco">1</div>
+      </div>
+      <div class="item item--deco">1</div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!-- 
+Created on : 13-nov-2019 14:44:14 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Flexbox Basic</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="Flexbox Basic">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis|Raleway&display=swap">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" 
+          href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <link rel="stylesheet" type="text/css" href="src/css/flexbox-basic-align-self.css">    
+    <style>
+
+      .flex-container-center {
+        width: fit-content;
+        height: 150px;
+        padding: 5px;
+        margin: 10px auto;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        background: #777;
+        align-items: flex-start;
+      }
+
+      .flex-item {
+        display: inherit;
+        width: content-box;
+        background: #ccc;
+        margin: 5px;
+      }
+
+      .flex-item:nth-of-type(3){
+        background-color:yellow;
+      }
+
+      .flex-container-center .flex-item *{
+        width:100%; 
+        text-align:center; 
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center; 
+        margin:10px;
+      }
+
+      .flex-container-center .stretch {
+        -webkit-align-self: stretch;
+        -ms-flex-align: stretch;
+        align-self: stretch;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <header class="header-top top--deco">
+      <h1 class="title-top title--deco">Flexbox Basico</h1>
+      <h2 class="title-top title--deco">Propiedades para contenedor PADRE</h2>
+    </header>
+
+    <h2>Flex Directions : row & wrap</h2>
+    <h3>Propiedad : align-self - Ejemplo 2</h3>
+    <h4>Alinear 1 elemento sobre el eje secundario 'vertical'</h4>
+    <h5>Solo tiene efecto sobre el eje vertical de una sola linea</h5>
+    <h5>
+      Permite cambiar comportamiento de align-items 
+      sobreescribir con un comportamiento especifico
+      para items concretos usando el valor 'auto'
+    </h5>
+
+    <div class="flex-container-center">
+      <div class="flex-item"><p>center</p></div>
+      <div class="flex-item"><p>baseline</p></div>
+      <div class="flex-item stretch"><p>stretch</p></div>
+      <div class="flex-item"><p>flex-start</p></div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Movies Home - HolyGrails Layout</title>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,500,700|Inconsolata:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <!-- OUR STYLESHEET -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  </head>
+
+  <body>
+
+    <!--Definimos Contenedor Principal-->
+    <div class="outer-wrap">
+      <!--Definimos Contenedor secundario - Cabecera-->
+      <header class="site-header">
+        <h1 class="site-title">Cabecera simple - HolyGrails Layout</h1>
+      </header>
+
+      <!--Definimos Contenedor PADRE - 'Content parent' -->
+      <div class="content-area">
+        <main class="main-content-area">
+          <h1>Contenedor principal - The main content goes here</h1>
+          <pre>
+            @media screen and (min-width: 1120px){
+            .content-area { display: flex; }
+            }
+          </pre>
+          <p>
+            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+          </p>
+        </main>
+
+        <!-- Definimos elemento hijo - 'Item Element' -->
+        <div class="sidebar-right">
+          <h1>Barra lateral - Sidebar goes here</h1>
+          <pre>
+            @media screen and (min-width: 1120px){
+            .sidebar-right { flex: 0 0 320px; }
+            }
+          </pre>
+          <p>
+            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Definimos contenedor independiente 'footer' -->
+    <footer class="site-footer">
+      <h1>Footer</h1>
+    </footer>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- Our Script File -->
+    <script type="text/javascript" src="js/main.js"></script>  
+
+  </body>
+
+</html>

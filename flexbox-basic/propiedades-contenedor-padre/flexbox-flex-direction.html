@@ -1,0 +1,99 @@
+<!-- 
+Created on : 09-nov-2019 0:19:14 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Flexbox Basic</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content=".">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" 
+          rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <link rel="stylesheet" type="text/css" href="src/css/flexbox-flex-direction.css" media="screen">
+  </head>
+  <body>
+
+    <hgroup>
+      <h1>Cambiamos el flujo natural de la disposición de los elementos</h1>
+      <h2>De Horizontal pasamos a Vertical - flex-direction: column </h2>
+    </hgroup>
+    <div class="contenedor-flex-direction">
+      <div class="item-directions item-deco">1</div>
+      <div class="item-directions item-child">2</div>
+      <div class="item-directions item-3">3</div>
+    </div>
+
+    <hgroup>
+      <h1>Desbordamiento de elementos con flex-wrap</h1>
+      <h2>Elementos que salen del contenedor principal "parent"</h2>
+    </hgroup>
+    <div class="contenedor-flex-nowrap">
+      <div class="item-nowrap item-deco">1</div>
+      <div class="item-nowrap item-child">2</div>
+      <div class="item-nowrap item-3">3</div>
+      <div class="item-nowrap item-3">4</div>
+      <div class="item-nowrap item-3">5</div>
+    </div>
+
+    <hgroup>
+      <h1>Al llegar a los 200px el siguiente elemento se coloca a continuación</h1>
+      <h2> 50% de 200px = 100px</h2>
+    </hgroup>
+    <div class="contenedor-flex-wrap">
+      <div class="item-directions-wrap item-deco">1</div>
+      <div class="item-directions-wrap item-child">2</div>
+      <div class="item-directions-wrap item-3">3</div>
+    </div>
+
+    <hgroup>
+      <h1>Shorthand - Conjunto de propiedades en una sola propiedad</h1>
+      <h2>Modificar la direccion y el wrap</h2>
+    </hgroup>
+    <div class="contenedor-flex-flow">
+      <div class="item-directions-flow item-deco">1</div>
+      <div class="item-directions-flow item-child">2</div>
+      <div class="item-directions-flow item-3">3</div>
+    </div>
+
+    <hgroup>
+      <h1>Justify Content</h1>
+      <h2>Cambiar la distribucion HORIZONTAL de los Item hijos del contenedor</h2>
+    </hgroup>
+    <div class="contenedor-justify-content">
+      <div class="item-directions-justify item-deco">1</div>
+      <div class="item-directions-justify item-child">2</div>
+      <div class="item-directions-justify item-3">3</div>
+    </div>
+
+    <hgroup>
+      <h1>Align-content</h1>
+      <h2>Cambiar la distribucion VERTICAL de los Item Hijos del contenedor</h2>
+    </hgroup>
+    <div class="contenedor-align-content">
+      <div class="item-align-content item-1-j-a">1</div>
+      <div class="item-align-content item-2-j-a">2</div>
+      <div class="item-align-content item-3-j-a">3</div>
+    </div>
+
+    <hgroup>
+      <h1>Justify Content & Align-content</h1>
+      <h2>Cambiar la distribucion HORIZONTAL & VERTICAL de los Item Hijos del contenedor</h2>
+    </hgroup>
+    <div class="contenedor-justify-align-content">
+      <div class="item-align-align-justify item-1-j-a">1</div>
+      <div class="item-align-align-justify item-2-j-a">2</div>
+      <div class="item-align-align-justify item-3-j-a">3</div>
+    </div>
+  </body>
+</html>

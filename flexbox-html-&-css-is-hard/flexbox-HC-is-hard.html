@@ -1,0 +1,205 @@
+<!-- 
+Created on : 27-nov-2019 10:42:40 
+User : Raul Vela 
+Ref : https://internetingishard.com/html-and-css/flexbox/
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-HC-is-hard</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content=".">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .menu-container {
+        display: flex;
+        justify-content: center;
+
+        padding: 2px 0;
+        color: #fff;
+        background: #5995DA;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: space-around;
+
+        width: 900px;
+        border: 1px solid #fff;
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: center;
+
+        color: #5995da;
+        background-color: #d6e9fe;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 900px;
+        height: 300px;
+      }
+      
+      .signup{
+        margin-left: auto;
+      }
+
+      .social ,
+      .subscribe{
+        align-self: flex-end;
+        margin-bottom: 20px;
+      }
+
+      .links {
+        display: flex;
+        justify-content: flex-end;
+
+        border: 1px solid #fff;
+      }
+
+      .login {
+        margin-left: 20px;
+      }
+
+      .social ,
+      .logo , 
+      .subscribe {
+        border: 1px solid #5995da;
+        padding: 1%;
+      }
+
+      .photo-grid-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .photo-grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+
+        align-items: center;
+        width: 900px;
+      }
+
+      .first-item{
+        order: 1;
+      }
+
+      .last-item{
+        order: -1;
+      }
+
+      .photo-grid-item {
+        border: 1px solid #fff;
+        width: 300px;
+        height: 300px;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer-item {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer-one {
+        flex: 1;
+
+        height: 200px;
+        border: 1px solid #fff;
+        background-color: #d6e9fe;
+      }
+
+      .footer-three{
+        flex: 2;
+      }
+
+      .footer-one ,
+      .footer-three{
+        flex: 0 1 auto;
+        width: 300px;
+        background-color: #5995DA;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="menu-container">
+      <div class='menu'>
+        <div class='date'>Aug 14, 2016</div>
+        <!--<div class='links'>-->
+          <div class='signup'>Sign Up</div>      <!-- This is nested now -->
+          <div class='login'>Login</div>         <!-- This one too! -->
+        <!--</div>-->
+      </div>
+    </div>
+
+    <div class='header-container'>
+      <div class='header'>
+        <div class='subscribe'>Subscribe &#9662;</div>
+        <div class='logo'><img src='images/awesome-logo.svg'/></div>
+        <div class='social'><img src='images/social-icons.svg'/></div>
+      </div>
+    </div>
+
+    <div class="photo-grid-container">
+      <div class="photo-grid">
+        <div class="photo-grid-item first-item">
+          <img src="images/one.svg" alt="numero 1">
+        </div>
+        <div class="photo-grid-item">
+          <img src="images/two.svg" alt="numero 2">
+        </div>
+        <div class="photo-grid-item">
+          <img src="images/three.svg" alt="numero 3">
+        </div>
+        <div class="photo-grid-item">
+          <img src="images/four.svg" alt="numero 4">
+        </div>
+        <div class="photo-grid-item last-item">
+          <img src="images/five.svg" alt="numero 5">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-item footer-one"></div>
+      <div class="footer-item footer-two"></div>
+      <div class="footer-item footer-three"></div>
+    </div>
+
+    <script>
+      var y = new Date().getFullYear();
+      var m = new Date().getMonth();
+      var d = new Date().getDay();
+      document.querySelector('.date').innerHTML = d + "/" + m + "/" + y;
+    </script>
+  </body>
+</html>

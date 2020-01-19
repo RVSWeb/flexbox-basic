@@ -1,0 +1,98 @@
+/* 
+    Created on : 16-nov-2019, 0:29:26
+    Author     : RVS
+*/
+
+body{
+  font-family: Roboto , sans-serif;
+}
+
+#pinTerest {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#pinTerest {
+  max-width: calc(5 * 16rem);
+  min-width: 25em;
+  margin: 0 auto;
+}
+
+h1{
+  text-align: center;
+}
+
+.pinWrapper{
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*flex-grow:0; las tarjetas no pueden crecer */
+  /*flex-shrink:1; las tarjetas puede contraerse */
+  /*flex-basis: calc(50% - 1em); 
+  las tarjetas le damos la anchura del 50% del contenedor 'width' 
+  - 1em para el margin
+  */
+  flex: 0 1 calc(50% - 1em); /* Asignacion de anchura */
+}
+
+/*
+  Diseño de la estructura
+*/
+
+.pinImg{
+  width: 188px;
+  height: 220px;
+}
+
+.pin .CreditTitle{
+  justify-content: space-between;
+}
+
+.pinWrapper {
+  padding: 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: white;
+  margin: .5em;
+}
+
+.pinWrapper p {
+  font-size: .8em;
+}
+
+.pin{
+  padding: .8em;
+}
+
+.CreditTitle{
+  border-top: 1px solid #e0e0e0;
+}
+
+.pinImage img{
+  width: 100%;
+}
+
+@media screen and (min-width: 30em){
+
+  .pinWrapper{
+    flex: 0 1 calc(33% - 1em); /* 3 tarjeta en fila*/
+  }
+}
+
+@media screen and (min-width: 48em){
+
+  .pinWrapper{
+    flex: 0 1 calc(25% - 1em); /* 4 tarjeta en fila*/
+  }
+}
+
+@media screen and (min-width: 62em){
+
+  .pinWrapper{
+    flex: 0 1 calc(20% - 1em); /* 5 tarjeta en fila*/
+  }
+}

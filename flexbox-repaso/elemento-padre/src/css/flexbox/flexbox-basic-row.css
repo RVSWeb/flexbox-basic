@@ -1,0 +1,117 @@
+/* 
+    Created on : 19-nov-2019, 18:58:02
+    Author     : RVS
+*/
+
+
+.title {
+  width: 60%;
+  max-width: 590px;
+  height: auto;
+  max-height: 200px;
+  padding: 2%;
+  margin: 2% auto;
+} 
+
+.title--deco {
+  font-family: Ubuntu , sans-serif;
+  text-align: center;
+  border-radius: 12px;
+  background: #71c9ce;
+}
+
+.container-box {
+  width: 100%;
+  max-width: max-content;
+  height: auto;
+  max-height: fit-content;
+  display: flex;  
+  flex-direction: row;
+  flex-wrap: wrap;
+} 
+
+.box--deco {
+  background: #a6e3e9;
+}
+
+.box-item {
+  margin: 1% auto;
+  width: 300px;
+  max-width: fit-content;
+  height: auto;
+  max-height: fit-content;
+} 
+
+.item-deco {
+  background: #71c9ce;
+  border-radius: 7px;
+  border: 1px solid #fff;
+}
+
+.box-marco{
+  box-sizing: content-box;
+  width: auto;
+  height: auto;
+  max-height: max-content;
+} 
+
+.marco--deco {
+  border: 5px solid #fff;
+}
+
+.box-blue {
+  box-sizing: content-box;
+  width: auto;
+  max-width: max-content;
+  height: auto;
+  margin: 1% 1%;
+} 
+
+.blue--deco {
+  border-radius: 12px;
+  border: 1px solid #fff;
+}
+
+.image-1 {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: available;
+  height: auto;
+}
+
+.image-1--deco {
+
+}
+
+.box-legend {
+  width: 80%;
+  box-sizing: border-box;
+  margin: 5% auto;
+  padding: 1%;
+} 
+
+.legend--deco {
+  text-align: center;
+  font-size: 1.2em;
+  font-family: Kulim Park , sans-serif;
+  background: #cbf1f5;
+}
+
+figure {
+  border-radius: 7px;
+}
+
+.box-paragraph {
+  width: 50%;
+  max-width: fit-content;
+  height: auto;
+  margin: 5% auto;
+  padding: 5%;
+} 
+
+.paragraph--deco {
+  background: #cbf1f5;
+  font-size: 1.3em;
+  text-align: center;
+  font-family: Kulim Park , sans-serif;
+}

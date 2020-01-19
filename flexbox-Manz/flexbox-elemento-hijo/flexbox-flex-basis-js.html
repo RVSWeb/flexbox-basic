@@ -1,0 +1,73 @@
+<!-- 
+Created on : 26-nov-2019 17:42:36 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-flex-basis-js</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content=".">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      *{
+        box-sizing:  border-box;
+      }
+
+      #main{
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+
+        width: 250px;
+        height: 100px;
+        border: 1px solid #c3c3c3;
+      }
+
+      #main div{
+        -webkit-flex-grow: 0;
+        -webkit-flex-shrink: 0;
+        -webkit-flex-basis: 50px;
+
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 50px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="main">
+      <div class="item-1 item-1--deco" id="myBlueDiv-1"></div>
+      <div class="item-2 item-2--deco" id="myBlueDiv-2">Blue div</div>
+    </div>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+
+      function myFunction() {
+        var x1 = document.getElementById('myBlueDiv-1');
+        x1.style.backgroundColor = "lightblue";
+        x1.innerHTML = "Lightblue div";
+        
+        var x2 = document.getElementById('myBlueDiv-2');
+        x2.style.flexBasis = "200px";
+        x2.style.backgroundColor = "coral";
+      }
+
+    </script>
+
+  </body>
+</html>

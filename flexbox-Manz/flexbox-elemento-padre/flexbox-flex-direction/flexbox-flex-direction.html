@@ -1,0 +1,90 @@
+<!-- 
+Created on : 24-nov-2019 12:47:26 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-elemento-padre-container</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexbox-elemento-padre-container">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <link rel="stylesheet" type="text/css" 
+          href="../src/css/flexbox-elemento-padre-container.css">
+    <style>
+
+      .container-columns {
+        display: flex;
+
+        flex-direction: row;
+        
+      }
+
+      .flex-item {
+        width: 300px;
+        height: 300px;
+
+        align-self: baseline;
+
+        border: 1px solid #f00;
+        border-radius: 12px;
+
+      }
+
+      .flex-item-1 , 
+      .flex-item-2 , 
+      .flex-item-3 {
+        font-family: Roboto , sans-serif;
+        font-size: 7em;
+        padding: 1%;
+        background: #ccffff;
+      }
+
+      .flex-layer{
+        width: 100px;
+        height: fit-content;
+        
+        margin: 25% auto;
+
+        text-align: center;
+        background: #00cccc;
+
+        box-sizing: border-box;
+        text-align: center;
+        
+        border-radius: 12px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="container-columns">
+      <div class="flex-item flex-item-1">
+        <div class="flex-layer">
+          1
+        </div>
+      </div>
+      <div class="flex-item flex-item-1">
+        <div class="flex-layer">
+          2
+        </div>
+      </div>
+      <div class="flex-item flex-item-1">
+        <div class="flex-layer">
+          3
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

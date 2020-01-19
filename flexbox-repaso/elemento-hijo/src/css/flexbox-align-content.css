@@ -1,0 +1,60 @@
+/* 
+    Created on : 20-nov-2019, 19:13:26
+    Author     : RVS
+*/
+
+*{
+  box-sizing: content-box;
+}
+
+.container-columns{
+  width: content-box;
+  height: 500px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+  align-content: center;
+}
+
+.container--deco{
+  background: #00adb5;
+  font-family: Roboto , sans-serif;
+}
+
+.flex-item{
+  width: 200px;
+  height: 133px;
+}
+
+.item--deco{
+  color: #fff;
+  border: 5px solid #000;
+  border-radius: 12px;
+}
+
+.box-text {
+  width: 100%;
+  height: border-box;
+}
+
+.text--deco {
+  text-align: center;
+  font-size: 2em;
+  border-radius: 12px;
+}
+
+.paragraph {
+  width: content-box;
+  height: auto;
+}
+
+.paragraph--deco {
+  box-sizing: border-box;
+  line-height: 60px;
+  border: 2px solid #fff;
+  background: #50e3c2;
+  border-radius: 12px;
+}

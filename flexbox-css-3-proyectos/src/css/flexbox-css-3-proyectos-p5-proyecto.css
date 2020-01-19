@@ -1,0 +1,98 @@
+/* 
+    Created on : 03-dic-2019, 12:25:41
+    Author     : Raul Vela
+*/
+
+body {
+  background-color: #ccc;
+  font-family: 'Fira Sans' , sans-serif;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+.contenedor {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background-color: #243582;
+  color: #f64c72;
+}
+
+nav {
+  background-color: #2f2fa2;
+  color: #fff;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: #99738e;
+  text-decoration: none;
+  font-size: 20px;
+  padding-right: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #f64c72;
+}
+
+#presentacion {
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#presentacion h2 {
+  color: #fff;
+  font-size: 50px;
+  line-height: 1.6em;
+  padding-top: 30px;
+}
+
+main {
+  float: left;
+  width: 70%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+aside {
+  float: right;
+  width: 30%;
+  background-color: #f64c72;
+  color: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #243582;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  margin-top: 40px;
+}
+
+@media screen and ( max-height: 600px ){
+
+  main , aside  {
+    width: 100%;
+    float: none;
+  }
+
+}

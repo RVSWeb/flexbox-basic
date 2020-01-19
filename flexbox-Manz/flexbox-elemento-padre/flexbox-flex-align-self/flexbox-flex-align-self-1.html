@@ -1,0 +1,152 @@
+<!-- 
+Created on : 25-nov-2019 23:11:22 
+User : Raul Vela 
+Ref : https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_align-self_center
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-flex-align-self</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexbox-flex-align-self">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      h1{
+        width: fit-content;
+        height: auto;
+        margin: 2% auto;
+        padding: 1%;
+        text-align: center;
+        font-family: Roboto , sans-serif;
+        font-size: 2em;
+        background: #2795ee;
+      }
+
+      h2{
+        width: fit-content;
+        height: auto;
+        margin: 2% auto;
+        padding: 1%;
+        text-align: center;
+        font-family: Roboto , sans-serif;
+        font-size: 2em;
+        background: #2795ee;
+      }
+
+      .container{
+        display: flex;
+        height: 200px;
+        flex-flow: row wrap;
+      }
+
+      .container--deco{
+        color: #fff;
+        background: #1e90ff;
+      }
+
+      .item{
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        border: 1px solid #f00;
+      }
+
+      .item-align-self-center{
+        align-self: center;
+        background: #3333ff;
+      }
+
+      .item-align-self-end{
+        align-self: flex-end;
+        background: #3333ff;
+      }
+
+      .item-align-self-start{
+        align-self: flex-start;
+        background: #3333ff;
+      }
+
+      .item-align-self-stretch{
+        align-self: stretch;
+        background: #3333ff;
+      }
+
+      .item-align-self-baseline{
+        align-self: baseline;
+        background: #3333ff;
+      }
+
+      .item-align-self-auto{
+        align-self: auto;
+        background: #3333ff;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Alinear elementos hijos unicamente</h1>
+    <h2>The align-self : center</h2>
+    <div class="container container--deco">
+      <div class="item item--deco">1</div>
+      <div class="item item--deco">2</div>
+      <div class="item item-align-self-center">3</div>
+      <div class="item item--deco">4</div>
+    </div>
+
+    <h2>The align-self : flex-start </h2>
+    <div class="container container--deco">
+      <div class="item item--deco">1</div>
+      <div class="item item--deco">2</div>
+      <div class="item item-align-self-start">3</div>
+      <div class="item item--deco">4</div>
+    </div>
+  </div>
+
+  <h2>The align-self : flex-end </h2>
+  <div class="container container--deco">
+    <div class="item item--deco">1</div>
+    <div class="item item--deco">2</div>
+    <div class="item item-align-self-end">3</div>
+    <div class="item item--deco">4</div>
+  </div>
+</div>
+
+<h2>The align-self : stretch </h2>
+<div class="container container--deco">
+  <div class="item item--deco">1</div>
+  <div class="item item--deco">2</div>
+  <div class="item item-align-self-stretch">3</div>
+  <div class="item item--deco">4</div>
+</div>
+</div>
+
+<h2>The align-self : baseline </h2>
+<div class="container container--deco">
+  <div class="item item--deco">1</div>
+  <div class="item item--deco">2</div>
+  <div class="item item-align-self-baseline">3</div>
+  <div class="item item--deco">4</div>
+</div>
+
+<h2>The align-self : auto </h2>
+<div class="container container--deco">
+  <div class="item item--deco">1</div>
+  <div class="item item--deco">2</div>
+  <div class="item item-align-self-auto">3</div>
+  <div class="item item--deco">4</div>
+</div>
+
+</body>
+</html>

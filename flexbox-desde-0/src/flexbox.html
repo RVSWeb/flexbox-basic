@@ -1,0 +1,59 @@
+<!-- 
+Created on : 06-dic-2019 20:09:15 
+User : Raul Vela 
+Name archive : flexbox.html
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-desde-0</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexbox-desde-0">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <style>
+        
+      section {
+        width: 500px;
+        height: 200px;
+        border: 1px solid #000;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       }
+      
+      .caja1{
+        background: #ccffff;
+        flex: 1;
+      }
+      
+      .caja2{
+        background: #0f0;
+        flex-grow: 1;
+      }
+      
+      .caja3{
+        background: #f00;
+        flex-grow: 1;
+      }
+      
+    </style>
+  </head>
+  <body>
+
+    <section> <!-- Elemento padre -->
+      <!-- Elemento hijos -->
+      <span class="caja1">Caja1</span> 
+      <span class="caja2">Caja2</span>
+      <span class="caja3">Caja3</span>
+    </section>
+  </body>
+</html>

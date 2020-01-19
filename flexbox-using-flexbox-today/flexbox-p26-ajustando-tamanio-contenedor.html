@@ -1,0 +1,75 @@
+<!-- 
+Created on : 29-nov-2019 18:16:15 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-p26-flexbox-ajustando-tamanio-contenedor</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexbox-2-ajustando-tamanio-contenedor">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      *{
+        box-sizing: border-box;
+        font-family: Roboto , sans-serif;
+      }
+
+      .sb-dates {
+        display: flex;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: flex-start;
+
+        background: #ffcc66;
+        border: 4px solid #009999;
+        border-radius: 7px;
+      }
+
+      .sb-dates__icon {
+        flex: 0 0 23px;
+      }
+
+      .sb-dates__select-day {
+        flex: 1 0 auto;
+      }
+
+      .sb-dates__select-month {
+        flex: 1 1 auto;
+      }
+
+      .calendar{
+        width: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="sb-dates">
+      <div class="sb-dates__icon">
+        <img class="calendar" 
+             src="src/img/calendar-icon-svg-13.jpg" alt="calendario">
+      </div>
+      <div class="sb-dates__select-day">
+        <select name="dates"></select>
+      </div>
+      <div class="sb-dates__select-month">
+        <select name="month"></select>
+      </div>
+    </div>
+    <script src="src/js/flexbox-2-flexbox-2-ajustando-tamanio-contenedor-days-months.js">
+    </script>
+  </body>
+</html>

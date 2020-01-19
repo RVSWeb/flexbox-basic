@@ -1,0 +1,88 @@
+/* 
+    Created on : 14-nov-2019, 14:36:18
+    Author     : RVS
+*/
+
+body{
+  box-sizing: content-box;
+  font-family: 'Raleway', sans-serif;
+  background: #e3fdfd;
+}
+
+.header-top {
+  width: 25%;
+  margin: 1% auto;
+  padding: 1%;
+}
+
+.top--deco {
+  border-radius: 7px;
+  background: #a6e3e9;
+}
+
+.title-top {
+  padding: 1%;
+}
+
+.title--deco {
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 7px;
+  background: #71c9ce;
+}
+
+.container-column-align-content {
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.column-align--deco-2 {
+  background-color: #777;
+}
+
+.item-align-content {
+  width: 50px;
+  height: 50px;
+}
+
+.flex-item {
+  font-family: Dosis , sans-serif;
+  border: 1px solid #000;
+  padding: 1%;
+}
+
+.item-deco , 
+.item-child , 
+.item-3 , 
+.item-4 , 
+.item-5 , 
+.item-6 , 
+.item-7{
+  text-align: center;
+  background: #a6e3e9;
+  border: 1px solid #000;
+}
+
+.container-column-align{
+  width: 50%;
+  height: 150px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+}
+
+.column-align--deco{
+  background: #777;
+}
+
+.item-align{
+  width: 50px;
+  height: 50px;
+  height: content-box;
+}
+
+

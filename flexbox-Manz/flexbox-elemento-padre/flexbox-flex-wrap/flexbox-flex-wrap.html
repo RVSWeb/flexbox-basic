@@ -1,0 +1,146 @@
+<!-- 
+Created on : 24-nov-2019 14:51:49 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-flex-wrap</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexbox-flex-wrap">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      .container-nowrap-column{
+        width: fit-content;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 1%;
+        margin: 1%;
+        background: #ccc;
+      }
+
+      .container-wrap-column{
+        width: 150px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 1%;
+        margin: 1%;
+        background: #ccc;
+      }
+
+      .container-nowrap-row {
+        width: calc(100% - 80%);
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 1%;
+        margin: 1%;
+        background: #ccc;
+      }
+
+      .container-wrap-row {
+        width: fit-content;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1%;
+        margin: 1%;
+        background: #ccc;
+      }
+
+      .item {
+        width: fit-content;
+        height: auto;
+        background: #00cccc;
+      }
+
+      .item-1 {
+        border: 1px solid #f00;
+        box-sizing: border-box;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Nowrap Column</h1>
+    <div class="container-nowrap-column">
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+    </div>
+
+    <hr>
+
+    <h1>Wrap Column</h1>
+    <div class="container-wrap-column">
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+    </div>
+
+    <hr>
+
+    <h1>Nowrap Row</h1>
+    <div class="container-nowrap-row">
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+    </div>
+
+    <hr>
+
+    <h1>Wrap Row</h1>
+    <div class="container-wrap-row">
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+      <div class="item item-1">TODO</div>
+    </div>
+
+
+  </body>
+</html>

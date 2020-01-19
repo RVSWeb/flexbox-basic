@@ -1,0 +1,52 @@
+<!-- 
+Created on : 13-nov-2019 14:44:14 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Flexbox Basic</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="Flexbox Basic">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis|Raleway&display=swap">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" 
+          href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <link rel="stylesheet" type="text/css" href="src/css/flexbox-basic-align-self.css">    
+  </head>
+  <body>
+
+    <header class="header-top top--deco">
+      <h1 class="title-top title--deco">Flexbox Basico</h1>
+      <h2 class="title-top title--deco">Propiedades para contenedor PADRE</h2>
+    </header>
+
+    <h2>Flex Directions : row & wrap</h2>
+    <h3>Propiedad : align-self - Ejemplo 1</h3>
+    <h4>Alinear 1 elemento sobre el eje secundario 'vertical'</h4>
+    <h5>Solo tiene efecto sobre el eje vertical de una sola linea</h5>
+    <h5>
+      Permite cambiar comportamiento de align-items 
+      sobreescribir con un comportamiento especifico
+      para items concretos usando el valor 'auto'
+    </h5>
+    <div class="container-column-align-self column-align--deco-4">
+      <div class="item-align-self item-1-align-self">center</div>
+      <div class="item-align-self item-2-align-self">baseline</div>
+      <div class="item-align-self item-3-align-self">flex-end</div>
+      <div class="item-align-self item-4-align-self">flex-start</div>
+      <div class="item-align-self item-5-align-self">stretch</div>
+      <div class="item-align-self item-6-align-self">auto</div>
+    </div>
+
+  </body>
+</html>

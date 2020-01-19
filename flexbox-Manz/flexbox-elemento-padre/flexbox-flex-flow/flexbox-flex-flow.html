@@ -1,0 +1,118 @@
+<!-- 
+Created on : 25-nov-2019 12:19:05 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-flex-flow</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexbox-flex-flow">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      .container-column-wrap {
+        width: 400px;
+        height: 200px;
+
+        display: flex;
+        flex-flow: column wrap;
+      }
+
+      .container-row-wrap {
+        width: 100px;
+        height: fit-content;
+
+        display: flex;
+        flex-flow: row wrap;
+      }
+
+      .container-row-nowrap {
+        width: 50px;
+        height: 150px;
+
+        display: flex;
+        flex-flow: row nowrap;
+      }
+
+      .container-column-nowrap {
+        width: 100px;
+        height: 50px;
+
+        display: flex;
+        flex-flow: column nowrap;
+      }
+
+      .container--deco{
+        box-sizing: border-box;
+        border: 5px solid #f00;
+        background: #00cccc;
+      }
+
+      .item {
+        width: 50px;
+        height: 50px;
+
+        border: 2px solid #00f;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <hr>
+
+    <h1>Flexbox - flex-flow : column wrap</h1>
+    <div class="container-column-wrap container--deco">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+
+    <hr>
+
+    <h1>Flexbox - flex-flow : row wrap</h1>
+    <div class="container-row-wrap container--deco">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+
+    <hr>
+
+    <h1>Flexbox - flex-flow : row nowrap</h1>
+    <div class="container-row-nowrap container--deco">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+
+    <hr>
+
+    <h1>Flexbox - flex-flow : column nowrap</h1>
+    <div class="container-column-nowrap container--deco">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+    </div>
+
+  </body>
+</html>

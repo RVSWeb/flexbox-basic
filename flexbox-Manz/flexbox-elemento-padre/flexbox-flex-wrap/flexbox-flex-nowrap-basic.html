@@ -1,0 +1,102 @@
+<!-- 
+Created on : 25-nov-2019 11:33:13 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-flex-nowrap-basic</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexbox-flex-nowrap-basic">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      h1{
+        width: fit-content;
+        height: auto;
+
+        padding: 1%;
+        margin: 2% auto;
+
+        text-align: center;
+        font-family: Roboto , sans-serif;
+        background: #ccffff;
+      }
+
+      .container-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        box-sizing: content-box;
+        background: #6ba8a9;
+      }
+
+      .container-column {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        box-sizing: content-box;
+        background: #6ba8a9;
+      }
+
+      .item {
+        width: fit-content;
+        height: auto;
+        box-sizing: border-box;
+        border: 1px solid #f00;
+      }
+
+      .item-50p {
+        width: 50%;
+        background: #777;
+        box-sizing: border-box;
+        border: 1px solid #f00;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Flexbox - flex-wrap : row</h1>
+    <div class="container-row">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+
+    <h1>Flexbox - flex-wrap : row</h1>
+    <div class="container-row">
+      <div class="item-50p">1</div>
+      <div class="item-50p">2</div>
+      <div class="item-50p">3</div>
+      4 espacio libre para otro elemento
+    </div>
+
+    <h1>Flexbox - flex-wrap : column</h1>
+    <div class="container-column">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h1>Flexbox - flex-wrap : column</h1>
+    <div class="container-column">
+      <div class="item-50p">1</div>
+      <div class="item-50p">2</div>
+      <div class="item-50p">3</div>
+    </div>
+
+  </body>
+</html>

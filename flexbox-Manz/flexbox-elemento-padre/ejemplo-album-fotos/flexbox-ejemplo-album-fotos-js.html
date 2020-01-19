@@ -1,0 +1,244 @@
+<!-- 
+Created on : 26-nov-2019 10:21:57 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-ejemplo-album-fotos-js</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexbox-ejemplo-album-fotos">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      *{
+        box-sizing: border-box;
+      }
+
+      body{
+        margin: 0;
+        font-family: Roboto , sans-serif;
+      }
+
+      .header {
+        text-align: center;
+        padding: 32px;
+      }
+
+      .header--deco {
+        text-align: center;
+        border: 2px solid #ccc;
+        border-radius: 7px;
+      }
+
+      .title {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 2%;
+      } 
+
+      .title--deco{
+        font-size: 2em;
+        border:  1px solid #CCC;
+      }
+
+      .paragraph {
+        width: fit-content;
+        margin: 2% auto;
+        padding: 2%;
+      } 
+
+      .paragraph--deco{
+        font-size: 2em;
+        border:  1px solid #CCC;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+
+      .column img{
+        margin-top : 8px;
+        vertical-align: middle;
+      }
+
+      .img-1 {
+        width: fit-content;
+        height: auto;
+      }
+
+      .img-2 {
+        width: fit-content;
+        height: auto;
+      }
+
+      .img-3 {
+        width: fit-content;
+        height: auto;
+      }
+
+      .img-4 {
+        width: fit-content;
+        height: auto;
+      }
+
+      .img-5 {
+        width: fit-content;
+        height: auto;
+      }
+
+      .img-6 {
+        width: fit-content;
+        height: auto;
+      }
+
+      .img-7 {
+        width: fit-content;
+        height: auto;
+      }
+
+      .img--deco{
+        margin: 0 auto;
+        padding: 2%;
+        margin-top: 8px;
+        border: 2px solid #000;
+        vertical-align: middle;
+      }
+
+      @media screen and (max-width: 800px){
+
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 600px){
+
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="header header--deco">
+      <h1 class="title title--deco">Responsive Image Grid</h1>
+      <p class="paragraph paragraph--deco">
+        Resize the browser window to see the responsive effect with JS
+      </p>
+    </div>
+
+    <!--Photo Grid-->
+    <div class="row">
+
+      <div class="column">
+        <img class="img-1 img--deco" 
+             src="https://www.w3schools.com/w3images/wedding.jpg" width="" alt="wedding">
+        <img class="img-2 img--deco" 
+             src="https://www.w3schools.com/w3images/rocks.jpg" width="" alt="rock">
+        <img class="img-3 img--deco" 
+             src="https://www.w3schools.com/w3images/falls2.jpg" width="" alt="falls">
+        <img class="img-4 img--deco" 
+             src="https://www.w3schools.com/w3images/paris.jpg" width="" alt="paris">
+        <img class="img-5 img--deco" 
+             src="https://www.w3schools.com/w3images/nature.jpg" width="" alt="nature">
+        <img class="img-6 img--deco" 
+             src="https://www.w3schools.com/w3images/mist.jpg" width="" alt="mist">
+        <img class="img-7 img--deco" 
+             src="https://www.w3schools.com/w3images/paris.jpg" width="" alt="paris">
+      </div>
+
+      <div class="column">
+        <img class="img-1 img--deco" 
+             src="https://www.w3schools.com/w3images/rocks.jpg" alt="rock">
+        <img class="img-2 img--deco" 
+             src="https://www.w3schools.com/w3images/wedding.jpg" alt="wedding">
+        <img class="img-3 img--deco" 
+             src="https://www.w3schools.com/w3images/paris.jpg" alt="paris">
+        <img class="img-4 img--deco" 
+             src="https://www.w3schools.com/w3images/falls2.jpg" alt="falls">
+        <img class="img-5 img--deco" 
+             src="https://www.w3schools.com/w3images/mist.jpg" alt="mist">
+        <img class="img-6 img--deco" 
+             src="https://www.w3schools.com/w3images/paris.jpg" alt="paris">
+        <img class="img-7 img--deco" 
+             src="https://www.w3schools.com/w3images/nature.jpg" alt="nature">
+      </div>
+
+      <div class="column">
+        <img class="img-1 img--deco" 
+             src="https://www.w3schools.com/w3images/wedding.jpg" alt="wedding">
+        <img class="img-2 img--deco" 
+             src="https://www.w3schools.com/w3images/rocks.jpg" alt="rock">
+        <img class="img-3 img--deco" 
+             src="https://www.w3schools.com/w3images/falls2.jpg" alt="falls">
+        <img class="img-4 img--deco" 
+             src="https://www.w3schools.com/w3images/paris.jpg" alt="paris">
+        <img class="img-5 img--deco" 
+             src="https://www.w3schools.com/w3images/nature.jpg" alt="nature">
+        <img class="img-6 img--deco" 
+             src="https://www.w3schools.com/w3images/paris.jpg" alt="paris">
+        <img class="img-7 img--deco" 
+             src="https://www.w3schools.com/w3images/mist.jpg" alt="mist">
+      </div>
+
+      <div class="column">
+        <img class="img-1 img--deco" 
+             src="https://www.w3schools.com/w3images/wedding.jpg" alt="wedding">
+        <img class="img-2 img--deco" 
+             src="https://www.w3schools.com/w3images/falls2.jpg" alt="falls">
+        <img class="img-3 img--deco" 
+             src="https://www.w3schools.com/w3images/rocks.jpg" alt="rock">
+        <img class="img-4 img--deco" 
+             src="https://www.w3schools.com/w3images/mist.jpg" alt="mist">
+        <img class="img-5 img--deco" 
+             src="https://www.w3schools.com/w3images/paris.jpg" alt="paris">
+        <img class="img-6 img--deco" 
+             src="https://www.w3schools.com/w3images/paris.jpg" alt="paris">
+        <img class="img-7 img--deco" 
+             src="https://www.w3schools.com/w3images/nature.jpg" alt="nature">
+      </div>
+
+    </div>
+    <script>
+      for (var i = 0; i <= 27; i++) {
+        var numMin = 140;
+        var numMax = 240;
+        var num1 = Math.floor((Math.random() * (numMax - numMin) + numMin));
+        var num2 = Math.floor((Math.random() * (numMax - numMin) + numMin));
+
+        var x = Math.round(num1);
+        var y = Math.round(num2);
+
+        x.toString();
+        y.toString();
+
+        var elemento = document.getElementsByClassName("img--deco")[i];
+        elemento.style.height = x + "px";
+        elemento.style.width = y + "px";
+      }
+
+    </script>
+  </body>
+</html>

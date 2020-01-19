@@ -1,0 +1,35 @@
+/* 
+    Created on : 20-nov-2019, 14:41:00
+    Author     : RVS
+*/
+
+
+.container-columns{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  height: auto;
+  width: content-box;
+  justify-content: space-around;
+  margin: 1% 0;
+
+}
+
+.container--deco{
+  border: 1px solid #000;
+  background: #00adb5;
+}
+
+.flex-item{
+  width: 10%;
+  height: 50px;
+}
+
+.item--deco{
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid #fff;
+  background: #a6e3e9;
+  font-family: Roboto , sans-serif;
+}

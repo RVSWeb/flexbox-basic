@@ -1,0 +1,102 @@
+<!-- 
+Created on : 25-nov-2019 23:11:22 
+User : Raul Vela 
+Ref : https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_align-self_center
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-flex-align-self</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content="flexbox-flex-align-self">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      .title {
+        width: fit-content;
+        height: auto;
+        padding: 1%;
+        margin: 1% auto;
+      }
+
+      .title--deco {
+        text-align: center;
+        background: #ccccff;
+      }
+
+      .container-align-self {
+        display: flex;
+        width: fit-content;
+        height: 200px;
+        margin: 1% auto;
+      }
+
+      .container--deco {
+        background: #f1f1f1;
+        border: 2px solid #1d4d4f;
+      }
+
+      .item-align-self {
+        background: DodgerBlue;
+        color: white;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        font-size: 1.8em;
+        border-radius: 7px;
+      }
+
+      .align-self-baseline{
+        align-self: baseline;
+      }
+
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+
+      .align-self-center {
+        align-self: center;
+      }
+
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1 class="title title--deco">
+      flex - align-self : <br>
+      Alinear un elemento hijo <br>
+      respecto al resto de elemento <br> 
+      dentro del contenedor padre 
+    </h1>
+
+    <div class="container-align-self container--deco">
+      <div class="item-align-self align-self-baseline">
+        align-self: baseline
+      </div>
+      <div class="item-align-self align-self-flex-end">
+        align-self: flex-end
+      </div>
+      <div class="item-align-self align-self-center">
+        align-self: center
+      </div>
+      <div class="item-align-self align-self-flex-start">
+        align-self: flex-start
+      </div>
+      <div class="item-align-self">5</div>
+    </div>
+
+
+  </body>
+</html>

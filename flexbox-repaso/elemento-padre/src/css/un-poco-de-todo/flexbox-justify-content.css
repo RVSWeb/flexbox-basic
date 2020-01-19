@@ -1,0 +1,120 @@
+/* 
+    Created on : 22-nov-2019, 13:42:12
+    Author     : RVS
+*/
+
+.title { 
+  width: 60%;
+  max-width: 700px;
+  height: auto;
+  max-height: 300px;
+
+  margin: 1% auto;
+  padding: 2%;
+  border-radius: 6px;
+}
+
+.title--deco {
+  text-align: center;
+  font-family: 'Ibarra Real Nova', serif;
+  background: #CCC;
+}
+
+.flex-container-center {
+  width: auto;
+
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+}
+
+.flex--deco{
+  background-color: #124678;
+}
+
+.container-item {
+  width: content-box;
+  height: content-box;
+  margin: 1%;
+  padding: 0.5%;
+}
+
+.item--deco {
+  text-align: center;
+  background-color: #CCC;
+}
+
+.link {
+  width: auto;
+  height: auto;
+  padding: 1%;
+} 
+
+.link--deco {
+  font-size: 2em;
+  font-family: 'Ibarra Real Nova', serif;
+  text-align: center;
+  text-decoration: none;
+  border: 0 solid #f00;
+  color: #000;
+}
+
+.link--deco:hover {
+  color: #6ba8a9;
+}
+
+/*
+* Columnas 
+*/
+
+.flex-container-justify{
+  width: 15%;
+  height: fit-content;
+  margin: 1% 1%;
+  padding: 1%;
+
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  flex-flow: column wrap;
+
+  justify-content: space-around;
+}
+
+.flex-justify--deco {
+  text-align: center;
+  background: #1d4d4f;
+  border-radius: 6px;
+}
+
+.container-item-justify {
+  padding: 5%;
+}
+
+.item-justify--deco{
+  border-radius: 6px;
+}
+
+.link-justify {
+  display: block;
+  padding: 5% 0;
+} 
+
+.link-justify--deco {
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+  font-family: 'Ibarra Real Nova', serif;
+  background: #6ba8a9;
+  border-radius: 7px;
+}
+
+.link-justify--deco:hover {
+  color: #e5dfdf;
+}

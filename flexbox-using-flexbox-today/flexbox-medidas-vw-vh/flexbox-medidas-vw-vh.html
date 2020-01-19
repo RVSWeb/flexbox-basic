@@ -1,0 +1,101 @@
+<!-- 
+Created on : 29-nov-2019 16:48:04 
+User : Raul Vela 
+Ref : https://es.stackoverflow.com/questions/93259/qu%C3%A9-diferencias-hay-realmente-entre-vh-vw-y
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-medidas-vw-vh</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content=".">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      *{
+        box-sizing: border-box;
+        font-family: Roboto , sans-serif;
+      }
+
+      body {
+        background-color: #cbcbcb;
+      }
+
+      #parent{
+        height:175px;
+        width:400px;
+        overflow: auto;
+        background-color: #eee;
+      }
+
+      .child{
+        width: 50%; /* 50% de ancho respetando el elemento parent */
+        color: #fff;
+      }
+
+      .vh-height{
+        float:left;
+        height:100vh; /* 100% de altura de viewPort */
+        background-color:royalblue;
+        border: 5px solid #cccc00;
+      }
+
+      .percent-height{
+        float:right;
+        height:100%; /* 100% de altura pero relativamente a su elemento padre */
+        background-color:brown;
+        border: 5px solid #ff33ff;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <span>uno</span>
+    <div id="parent">
+      <div class="child vh-height">dos - height:100vh;
+        - Ocupa todo el alto de la caja-box "viewport" de la pantalla  
+      </div>
+      <div class="child percent-height">tres -  height:100%;
+        - Solo ocupa todo el alto del elemento padre 'container-box' 
+        que lo envuelve
+      </div>
+    </div>
+
+    <span>(uno)  Altura del Documento/Viewport:</span>
+    <span id="doc-height"></span><br/>
+    (dos)  Altura del Viewport: 
+    <span id="vh-height"></span><br/>
+    (tres) Altura en Porcentaje (igual > altura parent): 
+    <span id="percent-height"></span><br/>
+
+    <script>
+
+      var docH = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+      var viewportH = document.querySelector('.vh-height').offsetHeight;
+      console.log(viewportH);
+
+      var percentH = document.querySelector('.percent-height').offsetHeight;
+      console.log(percentH);
+
+      var dhOut = document.getElementById('doc-height');
+      var vhOut = document.getElementById('vh-height');
+      var pctOut = document.getElementById('percent-height');
+
+      dhOut.innerHTML = docH;
+      vhOut.innerHTML = viewportH;
+      pctOut.innerHTML = percentH;
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!-- 
+Created on : 20-nov-2019 23:33:16 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox direction</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content=".">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <link rel="stylesheet" type="text/css" href="../src/css/un-poco-de-todo/flexbox-direction.css">
+  </head>
+  <body>
+
+    <h4 class="title">Row</h4>
+    <p class="paragraph">
+      Coloca los elementos en el 
+      <b>eje MAIN AXIS (eje principal)</b> 
+      en horizontal
+    </p>
+    <p class="paragraph">
+      Coloca los elementos en el 
+      <b>eje CROSS AXIS (eje secundario)</b>
+      en vertical
+    </p>
+
+    <div class="container-columns">
+      <div class="flex-container-center flex-row">
+        <div class="flex-item">
+          <p>1</p>
+        </div>
+        <div class="flex-item">
+          <p>2</p>
+        </div>
+        <div class="flex-item">
+          <p>3</p>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="title">Column</h4>
+    <p class="paragraph">
+      Cambia el sentido del 
+      <b>eje CROSS AXIS (eje secundario)</b> 
+      en horizontal
+    </p>
+    <p class="paragraph">
+      Cambia el sentido del 
+      <b>eje MAIN AXIS (eje principal)</b> 
+      en vertical
+    </p>
+
+    <div class="container-columns">
+      <div class="flex-container-center flex-column">
+        <div class="flex-item">
+          <p>1</p>
+        </div>
+        <div class="flex-item">
+          <p>2</p>
+        </div>
+        <div class="flex-item">
+          <p>3</p>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="title">Row-Reverse</h4>
+    <p class="paragraph">
+      Cambia el orden de los 
+      <b>elementos hijos o item</b> del 
+      eje horizontal <b>MAIN AXIS</b>
+    </p>
+
+    <div class="container-columns">
+      <div class="flex-container-center row-reverse">
+        <div class="flex-item">
+          <p>1</p>
+        </div>
+        <div class="flex-item">
+          <p>2</p>
+        </div>
+        <div class="flex-item">
+          <p>3</p>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="title">Column-Reverse</h4>
+    <p class="paragraph">
+      Cambia el orden de los 
+      <b>elementos hijos o item</b> del 
+      de la columna del eje vertical <b>CROSS AXIS</b>
+    </p>
+
+    <div class="container-columns">
+      <div class="flex-container-center column-reverse">
+        <div class="flex-item">
+          <p>1</p>
+        </div>
+        <div class="flex-item">
+          <p>2</p>
+        </div>
+        <div class="flex-item">
+          <p>3</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

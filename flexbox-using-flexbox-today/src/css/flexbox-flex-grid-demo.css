@@ -1,0 +1,73 @@
+/* 
+    Created on : 23-nov-2019, 12:54:13
+    Author     : RVS
+*/
+
+*{
+  box-sizing: content-box;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+h1{
+  width: fit-content;
+  height: auto;
+  margin: 1% auto;
+  padding: 1%;
+  color: #fff;
+  text-align: center;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background: #BD1550;
+  border-radius: 7px;
+}
+
+h2 {
+  font-family: Ubuntu , sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.cards {
+  list-style: none;
+  font-family: Roboto , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.flex li {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-gap: 20px;
+}
+
+.cards li {
+  border: 2px solid #490A3D;
+  border-radius: 5px;
+  background-color: #BD1550;
+  color: #fff;
+  flex: 1 1 200px;
+}
+
+.cards h2 {
+  background-color: #490A3D;
+  margin: 0;
+  padding: 10px;
+}
+
+.cards p {
+  padding: 10px;
+}

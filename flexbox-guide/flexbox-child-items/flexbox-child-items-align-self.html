@@ -1,0 +1,96 @@
+<!-- 
+Created on : 28-nov-2019 19:30:38 
+User : Raul Vela 
+Ref :
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-child-items-align-self</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content=".">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      *{
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .title {
+        width: fit-content;
+        height: auto;
+        margin: 1% auto;
+        padding: 1%;
+      }
+
+      .title--deco{
+        background: #ff99ff;
+        text-transform: capitalize;
+      }
+
+      .container {
+        width: auto;
+        height: 300px;
+        padding: 1%;
+
+        display: flex;
+        flex-flow: row wrap;
+      } 
+
+      .container--deco {
+        background: #ccccff;
+        border: 2px solid #000;
+      }
+
+      .item , .item-center , .item-end , .item-stretch{
+        width: content-box;
+        height: 100px;
+        padding: 1%;
+      } 
+
+      .item-center{
+        align-self: center;
+      }
+
+      .item-stretch{
+        align-self: stretch;
+        height: auto;
+      }
+
+      .item-end{
+        width: 300px;
+        align-self: flex-end;
+        padding: 1%;
+      }
+
+      .item--deco {
+        font-family: Roboto , sans-serif;
+        font-size: calc(100% + 45%);
+        border: 1px solid #000;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1 class="title title--deco">
+      Item Child - Vertical alignment : align-self
+    </h1>
+    <div class="container container--deco">
+      <div class="item-center item--deco">align-self : center</div>
+      <div class="item-end item--deco">align-self : flex-end</div>
+      <div class="item-stretch item--deco">align-self : stretch</div>
+      <div class="item item--deco">align-self : item</div>
+    </div>
+
+  </body>
+</html>

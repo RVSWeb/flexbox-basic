@@ -1,0 +1,91 @@
+<!-- 
+Created on : 25-nov-2019 14:37:39 
+User : Raul Vela 
+Ref : https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_flex-wrap_nowrap
+--> 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>flexbox-flex-wrap-w3c</title>
+    <!--Parte tecnica que recibe el servidor-->
+    <meta charset="utf-8">
+    <meta name="author" content="Raul Vela Salas , raulvelasalas@gmail.com">
+    <meta name="description" content=".">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="https://goo.gl/cais23" sizes="any">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lh3.googleusercontent.com/FoHGo_HJp1lWZ8Hj77ZRNje3Cpwu6yBCRnBlXVpDxTupkFGIrsQURTP4TuLKtlGoBuQVQRzVN44HRSC4OzD3vaeSXpS7Cs4oZC0nJYz4rhmBcugEKMX-iu7qFJtpzlXFMtSyuWUWwg=w2400">
+    <style>
+
+      .title{
+        width: fit-content;
+        margin: 2% auto;
+        padding: 1.5%;
+
+        text-align: center;
+        font-family: Roboto , sans-serif;
+        border-radius: 7px;
+        background: #6ba8a9;
+      }
+
+      .flex-container-center{
+        width: content-box;
+
+        display: flex;
+        flex-wrap: nowrap;
+        background: #00cccc;
+      }
+
+      .flex-container-center > div {
+        background: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        font-size: 30px;
+      }
+
+      .item-child {
+        border: 2px solid #f00;  
+        border-radius: 7px;
+      }
+
+      p {
+        width: fit-content;
+        height: auto;
+        padding: 1%;
+
+        font-family: Roboto , sans-serif;
+        font-size: 1em;
+        line-height: 30px;
+        text-align: center;
+        background: #ffcccc;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1 class="title">The flex-wrap Property</h1>
+
+    <div class="flex-container-center">
+      <div class="item-child">1</div>
+      <div class="item-child">2</div>
+      <div class="item-child">3</div>
+      <div class="item-child">4</div>
+      <div class="item-child">5</div>
+      <div class="item-child">6</div>
+      <div class="item-child">7</div>
+      <div class="item-child">8</div>
+      <div class="item-child">9</div>
+      <div class="item-child">10</div>
+    </div>
+
+    <p>
+      Redimensionar la pantalla del navegador para como sale fuera del ancho del contenedor los elementos hijos del contenedor principal
+    </p>
+
+  </body>
+</html>
